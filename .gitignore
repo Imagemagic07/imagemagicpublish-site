@@ -1,0 +1,23 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/
+
+# Dependencies (none required to run, but just in case)
+node_modules/
+
+# Local build / temp
+*.log
+.cache/
+
+# Original full-size source images (kept locally, not deployed)
+assets/originals/
+
+# Local env / secrets — never commit keys
+.env
+.dev.vars
+
+# Local Claude Code / preview tooling
+.claude/
