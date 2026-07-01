@@ -186,6 +186,9 @@ window.I18N = {
     "speaking.eyebrow": "Speaking · Interviews · Media",
     "speaking.title": "Speaking, Interviews & Media",
     "speaking.intro": "Dentz-Roll Bonheur is available to bring The Sacred Taboo and Guard Your Temple to audiences across platforms, stages, and communities.",
+    "speaking.proof.eyebrow": "On Stage",
+    "speaking.proof.title": "A Message That Moves the Room",
+    "speaking.proof.body": "From school auditoriums to church halls and community stages, Dentz-Roll Bonheur brings the conversation directly to the people who need it — with the presence, warmth, and clarity that hold a room and open honest dialogue.",
     "speaking.avail.title": "Available For",
     "speaking.avail.items": [
       "Podcasts", "Radio interviews", "Church conversations", "Youth conferences",
@@ -440,6 +443,9 @@ window.I18N = {
     "speaking.eyebrow": "Conférences · Interviews · Médias",
     "speaking.title": "Conférences, Interviews et Médias",
     "speaking.intro": "Dentz-Roll Bonheur est disponible pour amener Le Tabou Sacré et Garde Ton Temple à des audiences à travers plateformes, scènes et communautés.",
+    "speaking.proof.eyebrow": "Sur Scène",
+    "speaking.proof.title": "Un Message Qui Touche la Salle",
+    "speaking.proof.body": "Des auditoriums scolaires aux salles d’église et aux scènes communautaires, Dentz-Roll Bonheur amène la conversation directement à ceux qui en ont besoin — avec la présence, la chaleur et la clarté qui captivent une salle et ouvrent un dialogue sincère.",
     "speaking.avail.title": "Disponible Pour",
     "speaking.avail.items": [
       "Podcasts", "Interviews radio", "Conversations en église", "Conférences jeunesse",
