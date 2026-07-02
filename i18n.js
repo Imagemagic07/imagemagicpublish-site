@@ -167,9 +167,11 @@ window.I18N = {
     /* ABOUT */
     "about.eyebrow": "The Founder",
     "about.title": "About Dentz-Roll Bonheur",
-    "about.p1": "Dentz-Roll Bonheur, MBA, is an author, speaker, creative director, and founder of ImageMagicPublish LLC based in New York. His work explores the intersection of spirituality, human behavior, culture, media influence, sexuality, dignity, and personal transformation.",
-    "about.p2": "Through his book <em>The Sacred Taboo</em> and the conference project <em>Guard Your Temple</em>, he creates bold but respectful spaces for conversations that many families, institutions, and communities avoid — yet deeply need.",
-    "about.p3": "He writes and speaks with the goal of bringing difficult subjects into the light with clarity, intelligence, dignity, and spiritual depth.",
+    "about.p1": "Dentz-Roll Bonheur, MBA, is an author, speaker, creative director, and founder of ImageMagicPublish LLC, based in New York. His work explores the intersection of spirituality, human behavior, culture, media influence, sexuality, dignity, and personal transformation.",
+    "about.p2": "Through his debut book, <em>The Sacred Taboo: Secrets of Sex That Awaken</em>, Bonheur invites readers to see the human body not as something ordinary, but as a living temple, a place where memory, desire, energy, consciousness, and responsibility meet.",
+    "about.p3": "With a voice that is both poetic and precise, he bridges spiritual reflection, cultural observation, human behavior, and sacred wisdom to open conversations that many families, institutions, and communities avoid, yet deeply need.",
+    "about.p4": "Through his conference project, <em>Guard Your Temple</em>, he brings this message into live community spaces, helping youth, families, schools, churches, and organizations speak about the body, sexuality, dignity, media influence, identity, and responsibility with clarity and respect.",
+    "about.p5": "His mission is to bring difficult subjects into the light with intelligence, dignity, and spiritual depth, helping a generation remember that awakening begins with the way we understand, honor, and guard the human body.",
     "about.roles.title": "The Many Facets of One Vision",
     "about.roles.items": [
       ["Author", "Giving language and dignity to subjects too often left in silence."],
@@ -432,8 +434,10 @@ window.I18N = {
     "about.eyebrow": "Le Fondateur",
     "about.title": "À Propos de Dentz-Roll Bonheur",
     "about.p1": "Dentz-Roll Bonheur, MBA, est auteur, conférencier, directeur créatif et fondateur de ImageMagicPublish LLC, basé à New York. Son travail explore l’intersection entre la spiritualité, le comportement humain, la culture, l’influence des médias, la sexualité, la dignité et la transformation personnelle.",
-    "about.p2": "À travers son livre <em>Le Tabou Sacré</em> et le projet de conférence <em>Garde Ton Temple</em>, il crée des espaces audacieux mais respectueux pour des conversations que beaucoup de familles, d’institutions et de communautés évitent — mais dont elles ont profondément besoin.",
-    "about.p3": "Il écrit et prend la parole avec l’objectif d’amener les sujets difficiles à la lumière avec clarté, intelligence, dignité et profondeur spirituelle.",
+    "about.p2": "À travers son premier livre, <em>Le Tabou Sacré : Les Secrets du Sexe qui Éveille</em>, Bonheur invite le lecteur à voir le corps humain non pas comme une simple matière ordinaire, mais comme un temple vivant, un lieu où se rencontrent la mémoire, le désir, l’énergie, la conscience et la responsabilité.",
+    "about.p3": "Avec une voix à la fois poétique et précise, il relie la réflexion spirituelle, l’observation culturelle, le comportement humain et la sagesse sacrée afin d’ouvrir des conversations que beaucoup de familles, d’institutions et de communautés évitent, mais dont elles ont profondément besoin.",
+    "about.p4": "À travers son projet de conférence, <em>Garde Ton Temple</em>, il porte ce message dans des espaces communautaires vivants, en aidant les jeunes, les familles, les écoles, les églises et les organisations à parler du corps, de la sexualité, de la dignité, de l’influence des médias, de l’identité et de la responsabilité avec clarté et respect.",
+    "about.p5": "Sa mission est d’amener les sujets difficiles à la lumière avec intelligence, dignité et profondeur spirituelle, afin d’aider une génération à se rappeler que l’éveil commence dans la manière dont nous comprenons, honorons et gardons le corps humain.",
     "about.roles.title": "Les Multiples Facettes d’Une Seule Vision",
     "about.roles.items": [
       ["Auteur", "Donner un langage et une dignité à des sujets trop souvent laissés au silence."],
