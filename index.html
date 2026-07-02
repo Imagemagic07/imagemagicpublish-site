@@ -79,7 +79,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css?v=12" />
+  <link rel="stylesheet" href="styles.css?v=13" />
 </head>
 <body data-lang="en">
   <a href="#main" class="skip-link" data-i18n="a11y.skip">Skip to content</a>
@@ -276,7 +276,7 @@
             <p class="lead em" data-i18n="book.subtitle"></p>
             <div class="btn-row">
               <button class="btn btn--gold" data-buy data-i18n="cta.buyBook">Buy the Book</button>
-              <button class="btn btn--ghost" data-route="contact" data-i18n="cta.lostChapter">Get the Free Lost Chapter</button>
+              <button class="btn btn--ghost" data-lostchapter data-i18n="cta.lostChapter">Get the Free Lost Chapter</button>
               <button class="btn btn--text" data-route="contact" data-i18n="cta.inviteAuthor">Invite the Author</button>
             </div>
           </div>
@@ -323,7 +323,7 @@
           <p class="lead em" data-i18n="book.closing.p2"></p>
           <div class="btn-row center-row">
             <button class="btn btn--gold" data-buy data-i18n="cta.buyBook">Buy the Book</button>
-            <button class="btn btn--ghost" data-route="contact" data-i18n="cta.lostChapter">Get the Free Lost Chapter</button>
+            <button class="btn btn--ghost" data-lostchapter data-i18n="cta.lostChapter">Get the Free Lost Chapter</button>
           </div>
         </div>
       </div>
@@ -654,6 +654,26 @@
     </div>
   </footer>
 
+  <!-- LOST CHAPTER MODAL -->
+  <div class="modal" id="lostChapterModal" role="dialog" aria-modal="true" aria-labelledby="lcTitle" hidden aria-hidden="true">
+    <div class="modal__overlay" data-modal-close></div>
+    <div class="modal__panel">
+      <button class="modal__close" data-modal-close aria-label="Close">&times;</button>
+      <div class="modal__cover"><img class="js-cover" src="assets/cover-en.png" alt="The Sacred Taboo" loading="lazy" /></div>
+      <span class="eyebrow" data-i18n="lc.eyebrow">Free Gift</span>
+      <h2 class="h2" id="lcTitle" data-i18n="lc.title">The Lost Chapter</h2>
+      <p class="lead" data-i18n="lc.body"></p>
+      <form class="email-form" id="lostChapterForm">
+        <input type="text" name="company" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true" />
+        <input type="text"  name="name"  placeholder="" data-ph="email.first" autocomplete="given-name" aria-label="First name" />
+        <input type="email" name="email" placeholder="" data-ph="email.addr"  autocomplete="email" aria-label="Email address" required />
+        <button type="submit" class="btn btn--gold" data-i18n="lc.btn">Send Me the Chapter</button>
+      </form>
+      <p class="form-note" id="lcNote" role="status" aria-live="polite" hidden></p>
+      <p class="modal__fine" data-i18n="lc.fine">No spam. Unsubscribe anytime.</p>
+    </div>
+  </div>
+
   <!-- TEMPLATE: EMAIL CAPTURE -->
   <template id="tpl-email">
     <div class="wrap narrow center reveal email-cap">
@@ -661,8 +681,9 @@
       <h2 class="h2" data-i18n="email.title">Join the Awakening</h2>
       <p class="lead" data-i18n="email.body"></p>
       <form class="email-form" data-email-form>
-        <input type="text"  placeholder="" data-ph="email.first" autocomplete="given-name" aria-label="First name" />
-        <input type="email" placeholder="" data-ph="email.addr"  autocomplete="email" aria-label="Email address" required />
+        <input type="text" name="company" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true" />
+        <input type="text"  name="name"  placeholder="" data-ph="email.first" autocomplete="given-name" aria-label="First name" />
+        <input type="email" name="email" placeholder="" data-ph="email.addr"  autocomplete="email" aria-label="Email address" required />
         <button type="submit" class="btn btn--gold" data-i18n="email.btn">Enter the Circle</button>
       </form>
       <p class="form-note" data-email-note role="status" aria-live="polite" hidden></p>
@@ -684,7 +705,7 @@
     </div>
   </template>
 
-  <script src="i18n.js?v=12"></script>
-  <script src="app.js?v=12"></script>
+  <script src="i18n.js?v=13"></script>
+  <script src="app.js?v=13"></script>
 </body>
 </html>

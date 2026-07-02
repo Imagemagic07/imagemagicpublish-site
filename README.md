@@ -76,16 +76,37 @@ UPPERCASE placeholder to find each spot.
 
 ### Where values go (two places only)
 
+### 📗 Lead magnet + email list (MailerLite) — step by step
+1. Create a free **MailerLite** account and verify your sender domain/email.
+2. Create **two groups**: `Newsletter` and `Lost Chapter` (Subscribers → Groups).
+   Open each group and copy its **ID** from the URL → paste into `CONFIG.newsletterGroup`
+   and `CONFIG.lostChapterGroup` in `app.js`. Bump `?v=` after editing.
+3. Integrations → **Developer API** → create a token → set it in Cloudflare Pages as
+   env var **`MAILERLITE_API_KEY`** (used by both `/api/subscribe` and `/api/contact`).
+4. Host the PDF: drop the file in `assets/lost-chapter.pdf` (commit it). Its public link is
+   `https://imagemagicpublish.com/assets/lost-chapter.pdf`.
+5. In MailerLite → **Automations → New** → trigger **"When subscriber joins a group" →
+   Lost Chapter** → action **Send email** containing a button/link to the PDF URL above.
+   Now anyone who submits the Lost Chapter modal is added to the group and auto-emailed the PDF.
+6. (Optional) A second automation on the `Newsletter` group = your welcome email.
+
+How the site is already wired: the "Join the Awakening" forms and the Lost Chapter modal
+POST to `/api/subscribe` (Cloudflare Function, built) which adds the person to the group id
+the form sends. Falls back gracefully with a retry message if not configured.
+
 **1. Public links — edit the `CONFIG` block at the top of `app.js`:**
 ```js
 const CONFIG = {
   amazonBookUrl:    "https://www.amazon.com/dp/XXXX",  // Buy the Book buttons
   calendlyUrl:      "https://calendly.com/you/call",   // reveals the "Book a Call" button
   turnstileSiteKey: "0x4AAAAAAA...",                    // Turnstile SITE key (public)
-  contactEndpoint:  "/api/contact"                     // leave as-is
+  contactEndpoint:  "/api/contact",                    // leave as-is
+  subscribeEndpoint:"/api/subscribe",                  // leave as-is
+  newsletterGroup:  "1234567890",                      // MailerLite Newsletter group id
+  lostChapterGroup: "0987654321"                       // MailerLite Lost Chapter group id
 };
 ```
-Then **bump every `?v=10` to `?v=11`** in `index.html` so browsers reload it.
+Then **bump every `?v=N` to the next number** in `index.html` so browsers reload it.
 
 **2. Secret keys — the contact form is handled by `functions/api/contact.js`** (Cloudflare
 Pages Function, already built). It verifies Turnstile, emails you via Resend, and adds each

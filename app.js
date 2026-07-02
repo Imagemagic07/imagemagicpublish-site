@@ -12,10 +12,14 @@
      live as environment variables in the Cloudflare Pages dashboard.
      ========================================================================= */
   const CONFIG = {
-    amazonBookUrl:    "",            // Amazon KDP product link (Buy the Book buttons)
-    calendlyUrl:      "",            // Calendly booking link (Book a Call button)
-    turnstileSiteKey: "",            // Cloudflare Turnstile SITE key (public) for the contact form
-    contactEndpoint:  "/api/contact" // Cloudflare Pages Function (leave as-is)
+    amazonBookUrl:    "",             // Amazon KDP product link (Buy the Book buttons)
+    calendlyUrl:      "",             // Calendly booking link (Book a Call button)
+    turnstileSiteKey: "",             // Cloudflare Turnstile SITE key (public) for the contact form
+    contactEndpoint:  "/api/contact", // Cloudflare Pages Function (leave as-is)
+    subscribeEndpoint:"/api/subscribe", // MailerLite subscribe Function (leave as-is)
+    // MailerLite group IDs (public — find them in MailerLite → Subscribers → Groups):
+    newsletterGroup:  "",             // "Join the Awakening" newsletter group id
+    lostChapterGroup: ""              // Free Lost Chapter group id (its automation emails the PDF)
   };
 
   const body = document.body;
@@ -318,15 +322,68 @@
       });
     }
 
-    // email-capture forms (newsletter / lead magnet) — MailerLite wiring comes later
+    // "Join the Awakening" newsletter forms → MailerLite (newsletter group)
     document.querySelectorAll("[data-email-form]").forEach((f) => {
       f.addEventListener("submit", (e) => {
         e.preventDefault();
         const note = f.parentElement.querySelector("[data-email-note]");
-        if (note) { note.textContent = t("email.thanks"); note.hidden = false; }
-        f.reset();
+        subscribeForm(f, CONFIG.newsletterGroup, note, "email.thanks");
       });
     });
+
+    // Lost Chapter modal form → MailerLite (lost-chapter group → automation sends the PDF)
+    const lc = document.getElementById("lostChapterForm");
+    if (lc) {
+      lc.addEventListener("submit", (e) => {
+        e.preventDefault();
+        subscribeForm(lc, CONFIG.lostChapterGroup, document.getElementById("lcNote"), "lc.thanks");
+      });
+    }
+  }
+
+  async function subscribeForm(form, group, note, successKey) {
+    const btn = form.querySelector('button[type="submit"]');
+    const fd = new FormData(form);
+    const payload = { email: fd.get("email") || "", name: fd.get("name") || "", group: group || "", company: fd.get("company") || "" };
+    const setNote = (msg, ok) => { if (note) { note.textContent = msg; note.classList.toggle("form-note--err", !ok); note.hidden = false; } };
+    if (btn) btn.disabled = true;
+    try {
+      const res = await fetch(CONFIG.subscribeEndpoint, {
+        method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(payload)
+      });
+      if (!res.ok) throw new Error("status " + res.status);
+      setNote(t(successKey), true);
+      form.reset();
+    } catch (err) {
+      setNote(t("email.error"), false);
+    } finally {
+      if (btn) btn.disabled = false;
+    }
+  }
+
+  /* ------------------------------------------------------ lost-chapter modal */
+  function initModal() {
+    const modal = document.getElementById("lostChapterModal");
+    if (!modal) return;
+    let lastFocus = null;
+    const open = () => {
+      lastFocus = document.activeElement;
+      modal.hidden = false; modal.setAttribute("aria-hidden", "false");
+      document.body.style.overflow = "hidden";
+      const input = modal.querySelector("input");
+      if (input) setTimeout(() => input.focus(), 40);
+    };
+    const close = () => {
+      modal.hidden = true; modal.setAttribute("aria-hidden", "true");
+      document.body.style.overflow = "";
+      const note = document.getElementById("lcNote"); if (note) note.hidden = true;
+      if (lastFocus) try { lastFocus.focus(); } catch (_) {}
+    };
+    document.addEventListener("click", (e) => {
+      if (e.target.closest("[data-lostchapter]")) { e.preventDefault(); open(); }
+      else if (e.target.closest("[data-modal-close]")) { close(); }
+    });
+    document.addEventListener("keydown", (e) => { if (e.key === "Escape" && !modal.hidden) close(); });
   }
 
   /* ------------------------------------- integrations wired from CONFIG */
@@ -478,6 +535,7 @@
     bindTilt(document);
     initReveals();
     initForms();
+    initModal();
     wireIntegrations();
     initParticles();
     routeFromHash(true); // initial load: no focus-steal

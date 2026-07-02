@@ -238,6 +238,13 @@ window.I18N = {
     "email.addr": "Email Address",
     "email.btn": "Enter the Circle",
     "email.thanks": "Welcome to the circle. Watch your inbox for the awakening.",
+    "email.error": "Something went wrong. Please try again, or email imagemagicpublish@gmail.com.",
+    "lc.eyebrow": "A Free Gift",
+    "lc.title": "The Lost Chapter",
+    "lc.body": "Enter your name and email and we’ll send you a free chapter of <em>The Sacred Taboo</em> — a taste of the conversation that awakens.",
+    "lc.btn": "Send Me the Chapter",
+    "lc.thanks": "Beautiful. Check your inbox — your free chapter is on its way.",
+    "lc.fine": "No spam. Unsubscribe anytime.",
 
     /* FINAL CTA */
     "final.title": "Bring the Conversation to Your Community",
@@ -495,6 +502,13 @@ window.I18N = {
     "email.addr": "Adresse Email",
     "email.btn": "Entrer Dans le Cercle",
     "email.thanks": "Bienvenue dans le cercle. Surveillez votre boîte mail pour l’éveil.",
+    "email.error": "Une erreur s’est produite. Réessayez, ou écrivez à imagemagicpublish@gmail.com.",
+    "lc.eyebrow": "Un Cadeau Gratuit",
+    "lc.title": "Le Chapitre Perdu",
+    "lc.body": "Entrez votre nom et votre email et nous vous enverrons un chapitre gratuit de <em>Le Tabou Sacré</em> — un avant-goût de la conversation qui éveille.",
+    "lc.btn": "Envoyez-moi le Chapitre",
+    "lc.thanks": "Magnifique. Consultez votre boîte mail — votre chapitre gratuit arrive.",
+    "lc.fine": "Pas de spam. Désabonnement à tout moment.",
 
     /* FINAL CTA */
     "final.title": "Amenez la Conversation Dans Votre Communauté",

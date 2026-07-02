@@ -562,6 +562,30 @@ strong{color:inherit;font-weight:600}
 .faq[open] .faq__icon::after{transform:rotate(90deg);opacity:0}
 .faq__a{padding:0 1.5rem 1.4rem;color:var(--ink-soft);font-size:1.02rem;line-height:1.7;max-width:64ch}
 
+/* ================================================================== MODAL */
+.modal{position:fixed;inset:0;z-index:120;display:grid;place-items:center;padding:1.2rem}
+.modal__overlay{position:absolute;inset:0;background:rgba(4,10,20,.72);
+  backdrop-filter:blur(4px);animation:fadeIn .3s ease}
+.modal__panel{position:relative;z-index:1;width:min(460px,100%);max-height:92vh;overflow:auto;
+  text-align:center;padding:2.4rem 1.8rem 1.8rem;border-radius:var(--radius);
+  background:linear-gradient(160deg,var(--white-glow),#efe4cf);
+  border:1px solid rgba(212,166,58,.4);box-shadow:0 40px 90px -30px rgba(0,0,0,.75);
+  animation:pop .35s var(--ease)}
+.modal__close{position:absolute;top:.5rem;right:.7rem;font-size:1.7rem;line-height:1;
+  color:var(--ink-soft);width:40px;height:40px;border-radius:50%;transition:.25s var(--ease)}
+.modal__close:hover{color:var(--navy);background:rgba(212,166,58,.14)}
+.modal__cover{margin:0 auto 1rem;width:110px}
+.modal__cover img{width:100%;border-radius:4px;filter:drop-shadow(0 16px 30px rgba(0,0,0,.35))}
+.modal__panel .eyebrow{margin-bottom:.4rem}
+.modal__panel .h2{margin-bottom:.6rem}
+.modal__panel .lead{font-size:1rem;margin:0 auto 1.3rem;max-width:42ch}
+.modal__panel .email-form{flex-direction:column;gap:.7rem;margin-top:0}
+.modal__panel .email-form input{min-width:0;width:100%}
+.modal__panel .btn{width:100%}
+.modal__fine{font-size:.8rem;color:var(--ink-soft);margin-top:.9rem}
+@keyframes fadeIn{from{opacity:0}to{opacity:1}}
+@keyframes pop{from{opacity:0;transform:translateY(14px) scale(.98)}to{opacity:1;transform:none}}
+
 /* ============================================================= EMAIL CAPTURE */
 .email-cap{}
 .email-form{display:flex;flex-wrap:wrap;gap:.8rem;justify-content:center;margin-top:1.8rem}
