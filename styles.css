@@ -582,6 +582,7 @@ strong{color:inherit;font-weight:600}
 .modal__panel .email-form{flex-direction:column;gap:.7rem;margin-top:0}
 .modal__panel .email-form input{min-width:0;width:100%}
 .modal__panel .btn{width:100%}
+.modal__download{margin-top:.6rem}
 .modal__fine{font-size:.8rem;color:var(--ink-soft);margin-top:.9rem}
 @keyframes fadeIn{from{opacity:0}to{opacity:1}}
 @keyframes pop{from{opacity:0;transform:translateY(14px) scale(.98)}to{opacity:1;transform:none}}

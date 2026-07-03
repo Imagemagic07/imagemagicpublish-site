@@ -83,12 +83,13 @@ UPPERCASE placeholder to find each spot.
    and `CONFIG.lostChapterGroup` in `app.js`. Bump `?v=` after editing.
 3. Integrations → **Developer API** → create a token → set it in Cloudflare Pages as
    env var **`MAILERLITE_API_KEY`** (used by both `/api/subscribe` and `/api/contact`).
-4. Host the PDF: drop the file in `assets/lost-chapter.pdf` (commit it). Its public link is
-   `https://imagemagicpublish.com/assets/lost-chapter.pdf`.
-5. In MailerLite → **Automations → New** → trigger **"When subscriber joins a group" →
-   Lost Chapter** → action **Send email** containing a button/link to the PDF URL above.
-   Now anyone who submits the Lost Chapter modal is added to the group and auto-emailed the PDF.
-6. (Optional) A second automation on the `Newsletter` group = your welcome email.
+4. The PDFs are already hosted on the site (`assets/lost-chapter-en.pdf` and `-fr.pdf`), and
+   the modal delivers the correct language **instantly on signup** — so delivery works even
+   before MailerLite is connected. You don't need an automation just to deliver the file.
+5. (Recommended) In MailerLite → **Automations → New** → trigger **"When subscriber joins →
+   Lost Chapter"** → **Send email** with a warm welcome + the same download links
+   (`https://imagemagicpublish.com/assets/lost-chapter-en.pdf` / `-fr.pdf`) as a backup copy.
+6. (Optional) A welcome automation on the `Newsletter` group.
 
 How the site is already wired: the "Join the Awakening" forms and the Lost Chapter modal
 POST to `/api/subscribe` (Cloudflare Function, built) which adds the person to the group id

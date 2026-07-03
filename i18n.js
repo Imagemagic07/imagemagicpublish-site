@@ -245,7 +245,8 @@ window.I18N = {
     "lc.title": "The Lost Chapter",
     "lc.body": "Enter your name and email and we’ll send you a free chapter of <em>The Sacred Taboo</em> — a taste of the conversation that awakens.",
     "lc.btn": "Send Me the Chapter",
-    "lc.thanks": "Beautiful. Check your inbox — your free chapter is on its way.",
+    "lc.thanks": "Beautiful. Your free chapter is ready below.",
+    "lc.download": "Download Your Chapter",
     "lc.fine": "No spam. Unsubscribe anytime.",
 
     /* FINAL CTA */
@@ -511,7 +512,8 @@ window.I18N = {
     "lc.title": "Le Chapitre Perdu",
     "lc.body": "Entrez votre nom et votre email et nous vous enverrons un chapitre gratuit de <em>Le Tabou Sacré</em> — un avant-goût de la conversation qui éveille.",
     "lc.btn": "Envoyez-moi le Chapitre",
-    "lc.thanks": "Magnifique. Consultez votre boîte mail — votre chapitre gratuit arrive.",
+    "lc.thanks": "Magnifique. Votre chapitre gratuit est prêt ci-dessous.",
+    "lc.download": "Télécharger Votre Chapitre",
     "lc.fine": "Pas de spam. Désabonnement à tout moment.",
 
     /* FINAL CTA */

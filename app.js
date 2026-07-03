@@ -19,7 +19,9 @@
     subscribeEndpoint:"/api/subscribe", // MailerLite subscribe Function (leave as-is)
     // MailerLite group IDs (public — find them in MailerLite → Subscribers → Groups):
     newsletterGroup:  "",             // "Join the Awakening" newsletter group id
-    lostChapterGroup: ""              // Free Lost Chapter group id (its automation emails the PDF)
+    lostChapterGroup: "",             // Free Lost Chapter group id (list building)
+    // Free chapter PDFs, delivered instantly on signup (hosted on the site):
+    lostChapterPdf:   { en: "assets/lost-chapter-en.pdf", fr: "assets/lost-chapter-fr.pdf" }
   };
 
   const body = document.body;
@@ -331,12 +333,31 @@
       });
     });
 
-    // Lost Chapter modal form → MailerLite (lost-chapter group → automation sends the PDF)
+    // Lost Chapter modal form → add to MailerLite (best-effort) + INSTANT PDF download
     const lc = document.getElementById("lostChapterForm");
     if (lc) {
-      lc.addEventListener("submit", (e) => {
+      lc.addEventListener("submit", async (e) => {
         e.preventDefault();
-        subscribeForm(lc, CONFIG.lostChapterGroup, document.getElementById("lcNote"), "lc.thanks");
+        const btn = lc.querySelector('button[type="submit"]');
+        const note = document.getElementById("lcNote");
+        const dl = document.getElementById("lcDownload");
+        const fd = new FormData(lc);
+        const email = (fd.get("email") || "").trim();
+        if (!email) return;
+        btn.disabled = true;
+        // add to the list (best-effort — never block delivery of the promised chapter)
+        try {
+          await fetch(CONFIG.subscribeEndpoint, {
+            method: "POST", headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ email, name: fd.get("name") || "", group: CONFIG.lostChapterGroup || "", company: fd.get("company") || "" })
+          });
+        } catch (_) {}
+        // always deliver the free chapter, in the visitor's language
+        const pdf = (CONFIG.lostChapterPdf && (CONFIG.lostChapterPdf[lang] || CONFIG.lostChapterPdf.en)) || "";
+        if (dl && pdf) { dl.href = pdf; dl.hidden = false; }
+        if (note) { note.textContent = t("lc.thanks"); note.classList.remove("form-note--err"); note.hidden = false; }
+        lc.hidden = true;
+        btn.disabled = false;
       });
     }
   }
@@ -368,6 +389,13 @@
     let lastFocus = null;
     const open = () => {
       lastFocus = document.activeElement;
+      // reset to the initial form state (in case it was submitted before)
+      const form = document.getElementById("lostChapterForm");
+      const note = document.getElementById("lcNote");
+      const dl = document.getElementById("lcDownload");
+      if (form) { form.hidden = false; form.reset(); }
+      if (note) note.hidden = true;
+      if (dl) dl.hidden = true;
       modal.hidden = false; modal.setAttribute("aria-hidden", "false");
       document.body.style.overflow = "hidden";
       const input = modal.querySelector("input");
