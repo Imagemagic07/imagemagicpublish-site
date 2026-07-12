@@ -372,9 +372,9 @@
       const res = await fetch(CONFIG.subscribeEndpoint, {
         method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(payload)
       });
-      if (!res.ok) throw new Error("status " + res.status);
-      setNote(t(successKey), true);
-      form.reset();
+      // 501 = MailerLite not connected yet → don't alarm visitors, just thank them
+      if (res.ok || res.status === 501) { setNote(t(successKey), true); form.reset(); }
+      else throw new Error("status " + res.status);
     } catch (err) {
       setNote(t("email.error"), false);
     } finally {
