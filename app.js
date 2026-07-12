@@ -12,7 +12,8 @@
      live as environment variables in the Cloudflare Pages dashboard.
      ========================================================================= */
   const CONFIG = {
-    amazonBookUrl:    "",             // Amazon KDP product link (Buy the Book buttons)
+    // Amazon product links (language-aware). Buy the Book opens the reader's language.
+    amazonBookUrl:    { en: "https://www.amazon.com/dp/B0FSGFVDD8", fr: "https://www.amazon.com/dp/B0FSZWJSS9" },
     calendlyUrl:      "",             // Calendly booking link (Book a Call button)
     turnstileSiteKey: "",             // Cloudflare Turnstile SITE key (public) for the contact form
     contactEndpoint:  "/api/contact", // Cloudflare Pages Function (leave as-is)
@@ -183,9 +184,16 @@
       window.open(hrefEl.dataset.href, "_blank", "noopener");
       return;
     }
-    // Buy button with no URL yet → send to the Book page (never a dead click)
+    // Buy the Book → open Amazon in the reader's language (fallback: Book page)
     const buyEl = e.target.closest("[data-buy]");
-    if (buyEl) { e.preventDefault(); go("book"); return; }
+    if (buyEl) {
+      e.preventDefault();
+      const a = CONFIG.amazonBookUrl;
+      const url = (typeof a === "string") ? a : (a && (a[lang] || a.en || a.fr)) || "";
+      if (url) window.open(url, "_blank", "noopener");
+      else go("book");
+      return;
+    }
     // internal SPA navigation
     const el = e.target.closest("[data-route]");
     if (el) {
@@ -426,10 +434,7 @@
     document.head.appendChild(s);
   }
   function wireIntegrations() {
-    // Buy-the-Book buttons
-    document.querySelectorAll("[data-buy]").forEach((b) => {
-      if (CONFIG.amazonBookUrl) { b.dataset.href = CONFIG.amazonBookUrl; }
-    });
+    // Buy-the-Book buttons are handled at click time (language-aware) — nothing to set here.
     // Calendly "Book a Call" buttons — show only when configured
     document.querySelectorAll("[data-calendly]").forEach((b) => {
       if (CONFIG.calendlyUrl) { b.hidden = false; b.dataset.href = CONFIG.calendlyUrl; }
