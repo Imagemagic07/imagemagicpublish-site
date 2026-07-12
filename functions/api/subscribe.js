@@ -26,7 +26,14 @@ export async function onRequestPost({ request, env }) {
 
   if (!env.MAILERLITE_API_KEY) return json({ ok: false, error: "not_configured" }, 501);
 
-  const bodyPayload = { email, fields: name ? { name } : {} };
+  // Custom fields power the automation: branch on `language`, segment on `source`.
+  const fields = {};
+  if (name) fields.name = name;
+  if (data.language === "fr") fields.language = "Français";
+  else if (data.language === "en") fields.language = "English";
+  if (data.source) fields.source = String(data.source).slice(0, 60);
+
+  const bodyPayload = { email, fields };
   if (group) bodyPayload.groups = [group];
 
   const r = await fetch("https://connect.mailerlite.com/api/subscribers", {

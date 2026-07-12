@@ -337,7 +337,7 @@
       f.addEventListener("submit", (e) => {
         e.preventDefault();
         const note = f.parentElement.querySelector("[data-email-note]");
-        subscribeForm(f, CONFIG.newsletterGroup, note, "email.thanks");
+        subscribeForm(f, CONFIG.newsletterGroup, note, "email.thanks", "Newsletter");
       });
     });
 
@@ -357,7 +357,7 @@
         try {
           await fetch(CONFIG.subscribeEndpoint, {
             method: "POST", headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({ email, name: fd.get("name") || "", group: CONFIG.lostChapterGroup || "", company: fd.get("company") || "" })
+            body: JSON.stringify({ email, name: fd.get("name") || "", group: CONFIG.lostChapterGroup || "", company: fd.get("company") || "", language: lang, source: "Free Chapter" })
           });
         } catch (_) {}
         // always deliver the free chapter, in the visitor's language
@@ -370,10 +370,10 @@
     }
   }
 
-  async function subscribeForm(form, group, note, successKey) {
+  async function subscribeForm(form, group, note, successKey, source) {
     const btn = form.querySelector('button[type="submit"]');
     const fd = new FormData(form);
-    const payload = { email: fd.get("email") || "", name: fd.get("name") || "", group: group || "", company: fd.get("company") || "" };
+    const payload = { email: fd.get("email") || "", name: fd.get("name") || "", group: group || "", company: fd.get("company") || "", language: lang, source: source || "Website" };
     const setNote = (msg, ok) => { if (note) { note.textContent = msg; note.classList.toggle("form-note--err", !ok); note.hidden = false; } };
     if (btn) btn.disabled = true;
     try {
