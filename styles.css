@@ -564,6 +564,7 @@ strong{color:inherit;font-weight:600}
 .praise-media__title{font-family:var(--serif);font-weight:600;color:var(--gold-hi);
   font-size:clamp(1.5rem,3vw,2rem);margin:.3rem 0 .5rem}
 .praise-media__desc{color:var(--cream-soft);max-width:52ch;margin:0 auto 1.4rem;line-height:1.6}
+.praise-media__desc--last{margin-bottom:0}
 
 /* ==================================================================== FAQ */
 .faq-list{margin-top:2.4rem;display:grid;gap:1rem}
