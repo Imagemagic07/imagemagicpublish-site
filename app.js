@@ -101,6 +101,12 @@
         card.setAttribute("data-tilt", "");
         card.innerHTML = `<span class="explore-card__mark" aria-hidden="true">✦</span><p>${item}</p>`;
         el.appendChild(card);
+      } else if (el.classList.contains("praise-grid")) {
+        const card = document.createElement("figure");
+        card.className = "praise-card reveal";
+        card.innerHTML = `<div class="praise-card__stars" aria-hidden="true">★★★★★</div>` +
+          `<blockquote>${item[0]}</blockquote><figcaption>${item[1]}</figcaption>`;
+        el.appendChild(card);
       } else if (el.classList.contains("faq-list")) {
         const d = document.createElement("details");
         d.className = "faq reveal";

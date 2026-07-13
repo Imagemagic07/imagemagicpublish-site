@@ -39,6 +39,23 @@ window.I18N = {
     "hero.sub": "ImageMagicPublish is a bold platform for books, conferences, and speaking experiences that bring clarity, dignity, and spiritual depth to conversations about the body, sexuality, identity, and responsibility.",
     "home.clarity": "Books, conferences, and speaking experiences helping families, schools, churches, and organizations bring necessary conversations into the light with dignity and spiritual depth.",
 
+    /* PRAISE / TESTIMONIALS */
+    "praise.eyebrow": "Praise",
+    "praise.title": "What Readers Are Saying",
+    "praise.badge": "★★★★★  5.0 · Verified readers on Amazon",
+    "praise.items": [
+      ["Not just a book. It is a revelation. Dentz-Roll masterfully unites science, spirituality, and poetry. It doesn't just inform, it transforms.", "Verified Amazon Reader"],
+      ["A spiritual initiation disguised as literature. A book that dares to speak about what most of us feel in silence.", "Myrlene J."],
+      ["From the very first page, I felt like someone was finally putting words on truths I had always sensed. Every chapter feels alive, a masterpiece.", "Elmania B."],
+      ["It made me see intimacy differently, more spiritual and honest. Definitely worth a read.", "Diego"],
+      ["What an alternative way to view sex!", "Pierre M."],
+      ["A book that both educates and elevates. I love it.", "Berenice C."]
+    ],
+    "praise.media.eyebrow": "As Featured On",
+    "praise.media.title": "Télé Lafwa",
+    "praise.media.desc": "Featured in an on-air interview with Frère Bénédic Lamartinière, a trusted voice in the Haitian faith community.",
+    "praise.media.cta": "Watch the Interviews",
+
     /* HOME — MISSION */
     "home.mission.title": "A Platform for Clarity, Dignity, and Awakening",
     "home.mission.body": "ImageMagicPublish exists to bring difficult but necessary conversations into the light with elegance, wisdom, and spiritual depth. Through books, conferences, media appearances, and community-centered education, the mission is to help individuals, families, and organizations speak about the body, sexuality, dignity, identity, and responsibility with clarity and respect.",
@@ -305,6 +322,23 @@ window.I18N = {
     "hero.title2": "Garder le Temple. Élever la Génération.",
     "hero.sub": "ImageMagicPublish est une plateforme audacieuse pour des livres, des conférences et des interventions qui apportent clarté, dignité et profondeur spirituelle aux conversations sur le corps, la sexualité, l’identité et la responsabilité.",
     "home.clarity": "Livres, conférences et interventions pour aider les familles, écoles, églises et organisations à amener les conversations nécessaires à la lumière avec dignité et profondeur spirituelle.",
+
+    /* PRAISE / TESTIMONIALS */
+    "praise.eyebrow": "Témoignages",
+    "praise.title": "Ce Que Disent les Lecteurs",
+    "praise.badge": "★★★★★  5,0 · Lecteurs vérifiés sur Amazon",
+    "praise.items": [
+      ["Ce n'est pas qu'un livre. C'est une révélation. Dentz-Roll unit magistralement la science, la spiritualité et la poésie. Il n'informe pas seulement, il transforme.", "Lecteur Amazon vérifié"],
+      ["Une initiation spirituelle déguisée en littérature. Un livre qui ose parler de ce que la plupart d'entre nous ressentent en silence.", "Myrlene J."],
+      ["Dès la première page, j'ai senti que quelqu'un mettait enfin des mots sur des vérités que j'avais toujours pressenties. Chaque chapitre est vivant, un chef-d'œuvre.", "Elmania B."],
+      ["Il m'a fait voir l'intimité autrement, de façon plus spirituelle et honnête. À lire absolument.", "Diego"],
+      ["Quelle façon alternative de voir le sexe !", "Pierre M."],
+      ["Un livre qui éduque et qui élève à la fois. Je l'adore.", "Berenice C."]
+    ],
+    "praise.media.eyebrow": "Vu Sur",
+    "praise.media.title": "Télé Lafwa",
+    "praise.media.desc": "Invité dans une interview télévisée avec Frère Bénédic Lamartinière, une voix respectée de la communauté de foi haïtienne.",
+    "praise.media.cta": "Voir les Interviews",
 
     /* HOME — MISSION */
     "home.mission.title": "Une Plateforme Pour La Clarté, La Dignité et L’Éveil",

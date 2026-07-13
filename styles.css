@@ -542,6 +542,29 @@ strong{color:inherit;font-weight:600}
 .footer__legal a{color:var(--cream-soft);transition:color .3s}
 .footer__legal a:hover{color:var(--gold-hi)}
 
+/* ============================================================ PRAISE / PROOF */
+.praise-badge{color:var(--gold-hi);font-weight:600;letter-spacing:.06em;font-size:1rem;margin-top:.5rem}
+.praise-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem;margin:2.8rem 0 2.4rem;text-align:left}
+.praise-card{
+  margin:0;padding:1.8rem 1.6rem;border-radius:var(--radius);
+  display:flex;flex-direction:column;gap:.8rem;
+  background:linear-gradient(160deg, var(--white-glow), #efe4cf);
+  border:1px solid rgba(212,166,58,.32);box-shadow:0 22px 44px -28px rgba(0,0,0,.6);
+}
+.praise-card__stars{color:var(--gold);letter-spacing:3px;font-size:.95rem}
+.praise-card blockquote{margin:0;font-family:var(--serif);font-style:italic;
+  font-size:1.12rem;line-height:1.5;color:var(--ink)}
+.praise-card figcaption{margin-top:auto;font-size:.8rem;letter-spacing:.1em;
+  text-transform:uppercase;color:var(--ink-soft);font-weight:600}
+/* media / as-featured-on block */
+.praise-media{max-width:660px;margin:.6rem auto 0;padding:2rem clamp(1.2rem,4vw,2.6rem);
+  border-radius:var(--radius);text-align:center;
+  background:linear-gradient(160deg, rgba(255,248,236,.06), rgba(255,248,236,.02));
+  border:1px solid rgba(212,166,58,.4)}
+.praise-media__title{font-family:var(--serif);font-weight:600;color:var(--gold-hi);
+  font-size:clamp(1.5rem,3vw,2rem);margin:.3rem 0 .5rem}
+.praise-media__desc{color:var(--cream-soft);max-width:52ch;margin:0 auto 1.4rem;line-height:1.6}
+
 /* ==================================================================== FAQ */
 .faq-list{margin-top:2.4rem;display:grid;gap:1rem}
 .faq{
@@ -686,14 +709,14 @@ strong{color:inherit;font-weight:600}
   .subhero__grid--rev .reveal:last-child{order:-1}
   /* on the homepage featured/speaking rows, image goes on top when stacked */
   .two-col-wide .reveal:has(.cover3d),.two-col-wide .reveal:has(.portrait){order:-1}
-  .theme-grid,.explore-grid{grid-template-columns:repeat(2,1fr)}
+  .theme-grid,.explore-grid,.praise-grid{grid-template-columns:repeat(2,1fr)}
   .role-grid,.cards-3{grid-template-columns:1fr}
   .impact-list{grid-template-columns:1fr}
   .footer__grid{grid-template-columns:1fr;gap:1.8rem}
 }
 @media (max-width:560px){
   .brand__name{font-size:1.05rem}
-  .theme-grid,.explore-grid{grid-template-columns:1fr}
+  .theme-grid,.explore-grid,.praise-grid{grid-template-columns:1fr}
   .lform__row{grid-template-columns:1fr}
   .btn{width:100%}
   .btn--text{width:auto}
