@@ -19,8 +19,8 @@
     contactEndpoint:  "/api/contact", // Cloudflare Pages Function (leave as-is)
     subscribeEndpoint:"/api/subscribe", // MailerLite subscribe Function (leave as-is)
     // MailerLite group IDs (public — find them in MailerLite → Subscribers → Groups):
-    newsletterGroup:  "",             // "Join the Awakening" newsletter group id
-    lostChapterGroup: "",             // Free Lost Chapter group id (list building)
+    newsletterGroup:  "192834696228373545", // "Awakened Message" (Join the Awakening newsletter)
+    lostChapterGroup: "192834650597492326", // "Lost Chapter" (free chapter lead magnet)
     // Free chapter PDFs, delivered instantly on signup (hosted on the site):
     lostChapterPdf:   { en: "assets/lost-chapter-en.pdf", fr: "assets/lost-chapter-fr.pdf" }
   };
