@@ -71,26 +71,14 @@ export async function onRequestPost({ request, env }) {
     results.push(["email", r.ok]);
   }
 
-  // 3) Add to MailerLite as a tagged lead
-  if (env.MAILERLITE_API_KEY) {
-    const groups = env.MAILERLITE_GROUP_ID ? [env.MAILERLITE_GROUP_ID] : undefined;
-    const r = await fetch("https://connect.mailerlite.com/api/subscribers", {
-      method: "POST",
-      headers: { Authorization: `Bearer ${env.MAILERLITE_API_KEY}`, "Content-Type": "application/json", Accept: "application/json" },
-      body: JSON.stringify({
-        email,
-        fields: { name, phone: data.phone || "", company: data.organization || "", last_reason: reason },
-        groups
-      })
-    });
-    results.push(["mailerlite", r.ok]);
-  }
-
-  // If nothing is configured yet, tell the client so it falls back to mailto.
-  if (results.length === 0) return json({ ok: false, error: "not_configured" }, 501);
-
-  const anyOk = results.some(([, ok]) => ok);
-  return json({ ok: anyOk, results }, anyOk ? 200 : 502);
+  // A contact/booking message MUST reach the inbox. We do NOT auto-add these
+  // people to the mailing list (they didn't opt in), and we only report success
+  // if the email was actually delivered. If email isn't configured yet, return
+  // 501 so the site falls back to opening the sender's email app addressed to you
+  // — that way a booking inquiry is never silently lost.
+  const emailed = results.length > 0 && results.every(([, ok]) => ok);
+  if (!emailed) return json({ ok: false, error: "email_not_configured" }, 501);
+  return json({ ok: true });
 }
 
 export const onRequestGet = () => json({ ok: false, error: "method_not_allowed" }, 405);
