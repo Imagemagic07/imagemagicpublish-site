@@ -16,7 +16,8 @@
     amazonBookUrl:    { en: "https://www.amazon.com/dp/B0FSGFVDD8", fr: "https://www.amazon.com/dp/B0FSZWJSS9" },
     calendlyUrl:      "",             // Calendly booking link (Book a Call button)
     turnstileSiteKey: "",             // Cloudflare Turnstile SITE key (public) for the contact form
-    contactEndpoint:  "/api/contact", // Cloudflare Pages Function (leave as-is)
+    contactEndpoint:  "/api/contact", // fallback if Web3Forms not set
+    web3formsKey:     "",             // Web3Forms access key → contact/booking form emails you
     subscribeEndpoint:"/api/subscribe", // MailerLite subscribe Function (leave as-is)
     // MailerLite group IDs (public — find them in MailerLite → Subscribers → Groups):
     newsletterGroup:  "192834696228373545", // "Awakened Message" (Join the Awakening newsletter)
@@ -316,20 +317,41 @@
           note.classList.toggle("form-note--err", !ok);
           note.hidden = false;
         };
+        // honeypot: a filled hidden field means a bot → look successful, send nothing
+        if ((data.company || "").trim()) { setNote("form.sent", true); cf.reset(); applyLang(); return; }
+
         btn.disabled = true; setNote("form.sending", true);
 
         try {
-          const res = await fetch(CONFIG.contactEndpoint, {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify(data)
-          });
-          if (!res.ok) throw new Error("bad status " + res.status);
+          let ok = false;
+          if (CONFIG.web3formsKey) {
+            // Web3Forms → emails the inquiry straight to your inbox
+            const res = await fetch("https://api.web3forms.com/submit", {
+              method: "POST",
+              headers: { "Content-Type": "application/json", Accept: "application/json" },
+              body: JSON.stringify({
+                access_key: CONFIG.web3formsKey,
+                subject: `[${data.reason || "Message"}] ${data.name || ""}`,
+                from_name: "ImageMagicPublish Website",
+                name: data.name, email: data.email, phone: data.phone,
+                organization: data.organization, reason: data.reason,
+                language: data.lang, message: data.message
+              })
+            });
+            const j = await res.json().catch(() => ({ success: false }));
+            ok = res.ok && j.success;
+          } else {
+            const res = await fetch(CONFIG.contactEndpoint, {
+              method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(data)
+            });
+            ok = res.ok;
+          }
+          if (!ok) throw new Error("send failed");
           setNote("form.sent", true);
           cf.reset(); applyLang();
           if (window.turnstile) try { window.turnstile.reset(); } catch (_) {}
         } catch (err) {
-          // Endpoint not deployed yet / offline → don't lose the lead: open email draft.
+          // Nothing configured / send failed → don't lose the inquiry: open email draft.
           setNote("form.error", false);
           mailtoFallback(data);
         } finally {
