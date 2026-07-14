@@ -17,7 +17,7 @@
     calendlyUrl:      "",             // Calendly booking link (Book a Call button)
     turnstileSiteKey: "",             // Cloudflare Turnstile SITE key (public) for the contact form
     contactEndpoint:  "/api/contact", // fallback if Web3Forms not set
-    web3formsKey:     "",             // Web3Forms access key → contact/booking form emails you
+    web3formsKey:     "3db72f96-5be3-4d30-83d2-d599841e0f0e", // Web3Forms → contact/booking emails you
     subscribeEndpoint:"/api/subscribe", // MailerLite subscribe Function (leave as-is)
     // MailerLite group IDs (public — find them in MailerLite → Subscribers → Groups):
     newsletterGroup:  "192834696228373545", // "Awakened Message" (Join the Awakening newsletter)
