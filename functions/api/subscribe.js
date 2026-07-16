@@ -26,12 +26,18 @@ export async function onRequestPost({ request, env }) {
 
   if (!env.MAILERLITE_API_KEY) return json({ ok: false, error: "not_configured" }, 501);
 
-  // Custom fields power the automation: branch on `language`, segment on `source`.
+  // Custom fields power the automation: branch on language, segment on source.
+  // MailerLite matches custom fields by their KEY. This account's fields use the
+  // keys `language_save` and `source_m` (display names "Language Save" / "Source_m"),
+  // so we write to those. We also set the plain `language`/`source` keys as a
+  // fallback — MailerLite silently ignores any key with no matching field, so
+  // this stays correct even if the fields are later renamed to the clean keys.
   const fields = {};
   if (name) fields.name = name;
-  if (data.language === "fr") fields.language = "Français";
-  else if (data.language === "en") fields.language = "English";
-  if (data.source) fields.source = String(data.source).slice(0, 60);
+  const setField = (value, ...keys) => { for (const k of keys) fields[k] = value; };
+  if (data.language === "fr") setField("Français", "language_save", "language");
+  else if (data.language === "en") setField("English", "language_save", "language");
+  if (data.source) setField(String(data.source).slice(0, 60), "source_m", "source");
 
   const bodyPayload = { email, fields };
   if (group) bodyPayload.groups = [group];
