@@ -202,31 +202,45 @@ window.I18N = {
     "about.voice.body": "Grounded in New York and reaching audiences far beyond it, Dentz-Roll speaks to a generation searching for clarity — bridging faith, culture, and modern life with honesty and depth.",
 
     /* SPEAKING */
-    "speaking.eyebrow": "Speaking · Interviews · Media",
-    "speaking.title": "Speaking, Interviews & Media",
-    "speaking.intro": "Dentz-Roll Bonheur is available to bring The Sacred Taboo and Guard Your Temple to audiences across platforms, stages, and communities.",
+    "speaking.eyebrow": "Speaking · Keynotes · Workshops",
+    "speaking.title": "Bring the Awakening to Your Stage",
+    "speaking.intro": "A school auditorium. A church sanctuary. A conference hall. Wherever the room, Dentz-Roll Bonheur brings a rare kind of conversation: honest, dignified, awakening. He doesn't only speak to an audience. He speaks to something inside them that has been waiting, quietly, to be named.",
     "speaking.proof.eyebrow": "On Stage",
     "speaking.proof.title": "A Message That Moves the Room",
-    "speaking.proof.body": "From school auditoriums to church halls and community stages, Dentz-Roll Bonheur brings the conversation directly to the people who need it — with the presence, warmth, and clarity that hold a room and open honest dialogue.",
-    "speaking.avail.title": "Available For",
-    "speaking.avail.items": [
-      "Podcasts", "Radio interviews", "Church conversations", "Youth conferences",
-      "Community events", "School and library programs", "Panel discussions",
-      "Book talks", "Cultural conversations"
+    "speaking.proof.body": "From teenagers in a school assembly to elders in a congregation, the response is the same: a room that leans in, a silence that truly listens, and a conversation that keeps going long after he has left the stage. He carries hard truths with warmth, and holds a room with presence, never performance.",
+    "speaking.video.eyebrow": "As Featured On · Télé Lafwa",
+    "speaking.video.title": "See the Conversation in Motion",
+    "speaking.video.desc": "A conversation on The Sacred Taboo with Frère Bénédic Lamartinière of Télé Lafwa.",
+    "speaking.talks.title": "Signature Talks",
+    "speaking.talks.intro": "Each one can become a keynote, an interactive workshop, or a multi-session series, shaped to your audience.",
+    "speaking.talks.items": [
+      ["Guard Your Temple", "For teens and young adults. In a world that sells the body cheaply, Dentz helps young people see their body as sacred ground worth protecting, and gives them the language and the courage to guard it. Ideal for schools, youth groups, and church programs."],
+      ["The Sacred Taboo", "For adult audiences. The conversation the world rarely dares to have with honesty: intimacy, memory, energy, and the sacred value of the body. A talk that lifts shame and restores reverence."],
+      ["Faith & the Body", "For churches and faith communities. The honest conversation faith too often avoids, desire, purity, and the body as a living temple, held with reverence, grace, and truth."]
     ],
-    "speaking.topics.title": "Suggested Topics",
-    "speaking.topics.items": [
-      "Why sexuality must be discussed with dignity",
-      "The body as a temple",
-      "Youth, media, sexuality, and self-worth",
-      "Helping families speak about difficult subjects",
-      "Faith, culture, and the value of the body",
-      "Community conversations on dignity, identity, and responsibility",
-      "The spiritual responsibility of intimacy",
-      "Guard Your Temple as a community education model"
+    "speaking.formats.title": "Formats",
+    "speaking.formats.items": [
+      "Keynote or assembly talk",
+      "Interactive workshop",
+      "Interview, panel or media appearance",
+      "Church service or retreat"
+    ],
+    "speaking.audiences.title": "Who He Speaks To",
+    "speaking.audiences.items": [
+      "Schools & youth programs",
+      "Churches & faith communities",
+      "Conferences, nonprofits & libraries",
+      "Parents, families & educators"
+    ],
+    "speaking.takeaways.title": "What Your Audience Walks Away With",
+    "speaking.takeaways.items": [
+      "A new way to see their own body: not as ordinary, but as sacred.",
+      "Language to speak about intimacy and dignity, without shame.",
+      "Young people equipped to guard their worth in a noisy world.",
+      "A conversation that keeps living long after the event ends."
     ],
     "speaking.cta.title": "Bring This Conversation to Your Stage",
-    "speaking.cta.body": "Honest, respectful, and spiritually grounded — a message your audience will not forget.",
+    "speaking.cta.body": "Every audience is different, and every talk is shaped to fit yours. Tell us about your event, and let's give your people a message they will carry home.",
 
     /* CONTACT */
     "contact.eyebrow": "Contact · Booking",
@@ -486,31 +500,45 @@ window.I18N = {
     "about.voice.body": "Basé à New York et touchant des audiences bien au-delà, Dentz-Roll s’adresse à une génération en quête de clarté — reliant la foi, la culture et la vie moderne avec honnêteté et profondeur.",
 
     /* SPEAKING */
-    "speaking.eyebrow": "Conférences · Interviews · Médias",
-    "speaking.title": "Conférences, Interviews et Médias",
-    "speaking.intro": "Dentz-Roll Bonheur est disponible pour amener Le Tabou Sacré et Garde Ton Temple à des audiences à travers plateformes, scènes et communautés.",
+    "speaking.eyebrow": "Conférences · Keynotes · Ateliers",
+    "speaking.title": "Amenez l’Éveil sur Votre Scène",
+    "speaking.intro": "Un auditorium scolaire. Un sanctuaire d’église. Une salle de conférence. Quelle que soit la salle, Dentz-Roll Bonheur y apporte une conversation rare : honnête, digne, éveillante. Il ne parle pas seulement à une audience. Il parle à quelque chose, au fond d’elle, qui attendait, en silence, d’être nommé.",
     "speaking.proof.eyebrow": "Sur Scène",
     "speaking.proof.title": "Un Message Qui Touche la Salle",
-    "speaking.proof.body": "Des auditoriums scolaires aux salles d’église et aux scènes communautaires, Dentz-Roll Bonheur amène la conversation directement à ceux qui en ont besoin — avec la présence, la chaleur et la clarté qui captivent une salle et ouvrent un dialogue sincère.",
-    "speaking.avail.title": "Disponible Pour",
-    "speaking.avail.items": [
-      "Podcasts", "Interviews radio", "Conversations en église", "Conférences jeunesse",
-      "Événements communautaires", "Programmes scolaires et bibliothèques", "Panels de discussion",
-      "Présentations du livre", "Conversations culturelles"
+    "speaking.proof.body": "Des adolescents dans une assemblée scolaire aux aînés d’une congrégation, la réaction est la même : une salle qui se penche en avant, un silence qui écoute vraiment, et une conversation qui continue longtemps après qu’il a quitté la scène. Il porte des vérités difficiles avec chaleur, et tient une salle par sa présence, jamais par la performance.",
+    "speaking.video.eyebrow": "Vu Sur · Télé Lafwa",
+    "speaking.video.title": "Voir la Conversation en Mouvement",
+    "speaking.video.desc": "Une conversation autour du Tabou Sacré avec Frère Bénédic Lamartinière de Télé Lafwa.",
+    "speaking.talks.title": "Conférences Signature",
+    "speaking.talks.intro": "Chacune peut devenir un keynote, un atelier interactif, ou une série de plusieurs sessions, façonnée pour votre audience.",
+    "speaking.talks.items": [
+      ["Garde Ton Temple", "Pour les adolescents et jeunes adultes. Dans un monde qui brade le corps, Dentz aide les jeunes à voir leur corps comme une terre sacrée qui mérite d’être protégée, et leur donne les mots et le courage de la garder. Idéal pour les écoles, les groupes de jeunes et les programmes d’église."],
+      ["Le Tabou Sacré", "Pour un public adulte. La conversation que le monde ose rarement avoir avec honnêteté : l’intimité, la mémoire, l’énergie et la valeur sacrée du corps. Une conférence qui lève la honte et restaure le respect."],
+      ["La Foi et le Corps", "Pour les églises et communautés de foi. La conversation sincère que la foi évite trop souvent, le désir, la pureté, et le corps comme temple vivant, tenue avec révérence, grâce et vérité."]
     ],
-    "speaking.topics.title": "Sujets Suggérés",
-    "speaking.topics.items": [
-      "Pourquoi la sexualité doit être abordée avec dignité",
-      "Le corps comme temple",
-      "Jeunesse, médias, sexualité et valeur personnelle",
-      "Aider les familles à parler des sujets difficiles",
-      "Foi, culture et valeur du corps",
-      "Conversations communautaires sur la dignité, l’identité et la responsabilité",
-      "La responsabilité spirituelle de l’intimité",
-      "Garde Ton Temple comme modèle d’éducation communautaire"
+    "speaking.formats.title": "Formats",
+    "speaking.formats.items": [
+      "Keynote ou conférence en assemblée",
+      "Atelier interactif",
+      "Interview, panel ou apparition média",
+      "Service d’église ou retraite"
+    ],
+    "speaking.audiences.title": "À Qui Il S’adresse",
+    "speaking.audiences.items": [
+      "Écoles et programmes jeunesse",
+      "Églises et communautés de foi",
+      "Conférences, associations et bibliothèques",
+      "Parents, familles et éducateurs"
+    ],
+    "speaking.takeaways.title": "Ce Que Votre Audience Emporte",
+    "speaking.takeaways.items": [
+      "Une nouvelle façon de voir son propre corps : non comme ordinaire, mais comme sacré.",
+      "Les mots pour parler d’intimité et de dignité, sans honte.",
+      "Des jeunes armés pour garder leur valeur dans un monde bruyant.",
+      "Une conversation qui continue de vivre longtemps après l’événement."
     ],
     "speaking.cta.title": "Amenez Cette Conversation Sur Votre Scène",
-    "speaking.cta.body": "Honnête, respectueux et spirituellement enraciné — un message que votre audience n’oubliera pas.",
+    "speaking.cta.body": "Chaque audience est différente, et chaque conférence est façonnée pour la vôtre. Parlez-nous de votre événement, et offrons à vos gens un message qu’ils rapporteront chez eux.",
 
     /* CONTACT */
     "contact.eyebrow": "Contact · Réservation",

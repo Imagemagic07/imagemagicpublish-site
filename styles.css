@@ -175,6 +175,7 @@ h1:focus,h2:focus{outline:none}
 .subhero .btn--text:hover,.section--navy .btn--text:hover{color:var(--white-glow)}
 
 .btn-row{display:flex;flex-wrap:wrap;gap:.85rem;margin-top:2rem}
+.btn-row.is-center{justify-content:center}
 .center-row{justify-content:center}
 
 /* ================================================================ LAYOUT */

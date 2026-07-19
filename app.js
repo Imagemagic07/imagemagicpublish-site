@@ -137,7 +137,7 @@
     book:     { en: "The Sacred Taboo: Secrets of Sex That Awaken — Book", fr: "Le Tabou Sacré : Les Secrets du Sexe qui Éveille — Livre" },
     temple:   { en: "Guard Your Temple — Conference Project", fr: "Garde Ton Temple — Projet de Conférence" },
     about:    { en: "About Dentz-Roll Bonheur, MBA", fr: "À Propos de Dentz-Roll Bonheur, MBA" },
-    speaking: { en: "Speaking, Interviews & Media", fr: "Conférences, Interviews et Médias" },
+    speaking: { en: "Speaking & Keynotes — Book Dentz-Roll Bonheur", fr: "Conférences & Keynotes — Réservez Dentz-Roll Bonheur" },
     contact:  { en: "Contact & Booking", fr: "Contact et Réservation" },
     privacy:  { en: "Privacy Policy", fr: "Politique de Confidentialité" },
     terms:    { en: "Terms & Disclaimer", fr: "Conditions & Avertissement" }
