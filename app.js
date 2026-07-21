@@ -1,14 +1,14 @@
 /* =========================================================================
-   ImageMagicPublish — App logic
+   ImageMagicPublish, App logic
    Router · i18n binding · gold particle system · 3D tilt · scroll reveals
    ========================================================================= */
 (function () {
   "use strict";
 
   /* =========================================================================
-     CONFIG — paste your links/keys here (the only place you need to edit).
+     CONFIG, paste your links/keys here (the only place you need to edit).
      Leave a value as "" and the site degrades gracefully until you fill it.
-     Secret keys (Resend, MailerLite, Turnstile SECRET) are NOT here — those
+     Secret keys (Resend, MailerLite, Turnstile SECRET) are NOT here, those
      live as environment variables in the Cloudflare Pages dashboard.
      ========================================================================= */
   const CONFIG = {
@@ -19,7 +19,7 @@
     contactEndpoint:  "/api/contact", // fallback if Web3Forms not set
     web3formsKey:     "3db72f96-5be3-4d30-83d2-d599841e0f0e", // Web3Forms → contact/booking emails you
     subscribeEndpoint:"/api/subscribe", // MailerLite subscribe Function (leave as-is)
-    // MailerLite group IDs (public — find them in MailerLite → Subscribers → Groups):
+    // MailerLite group IDs (public, find them in MailerLite → Subscribers → Groups):
     newsletterGroup:  "192834696228373545", // "Awakened Message" (Join the Awakening newsletter)
     lostChapterGroup: "192834650597492326", // "Lost Chapter" (free chapter lead magnet)
     // Free chapter PDFs, delivered instantly on signup (hosted on the site):
@@ -133,11 +133,11 @@
   const pages = document.querySelectorAll(".page");
   const SITE = "ImageMagicPublish";
   const TITLES = {
-    home:     { en: "The Sacred Taboo & Guard Your Temple — Dentz-Roll Bonheur", fr: "Le Tabou Sacré & Garde Ton Temple — Dentz-Roll Bonheur" },
-    book:     { en: "The Sacred Taboo: Secrets of Sex That Awaken — Book", fr: "Le Tabou Sacré : Les Secrets du Sexe qui Éveille — Livre" },
-    temple:   { en: "Guard Your Temple — Conference Project", fr: "Garde Ton Temple — Projet de Conférence" },
+    home:     { en: "The Sacred Taboo & Guard Your Temple, Dentz-Roll Bonheur", fr: "Le Tabou Sacré & Garde Ton Temple, Dentz-Roll Bonheur" },
+    book:     { en: "The Sacred Taboo: Secrets of Sex That Awaken, Book", fr: "Le Tabou Sacré : Les Secrets du Sexe qui Éveille, Livre" },
+    temple:   { en: "Guard Your Temple, Conference Project", fr: "Garde Ton Temple, Projet de Conférence" },
     about:    { en: "About Dentz-Roll Bonheur, MBA", fr: "À Propos de Dentz-Roll Bonheur, MBA" },
-    speaking: { en: "Speaking & Keynotes — Book Dentz-Roll Bonheur", fr: "Conférences & Keynotes — Réservez Dentz-Roll Bonheur" },
+    speaking: { en: "Speaking & Keynotes, Book Dentz-Roll Bonheur", fr: "Conférences & Keynotes, Réservez Dentz-Roll Bonheur" },
     contact:  { en: "Contact & Booking", fr: "Contact et Réservation" },
     privacy:  { en: "Privacy Policy", fr: "Politique de Confidentialité" },
     terms:    { en: "Terms & Disclaimer", fr: "Conditions & Avertissement" }
@@ -290,7 +290,7 @@
 
   /* ------------------------------------------------------------ forms */
   function mailtoFallback(d) {
-    const subject = `[${d.reason || "Message"}] — ${d.name || ""}`;
+    const subject = `[${d.reason || "Message"}], ${d.name || ""}`;
     const bodyLines = [
       `Name: ${d.name || ""}`, `Email: ${d.email || ""}`, `Phone: ${d.phone || ""}`,
       `Organization: ${d.organization || ""}`, `Reason: ${d.reason || ""}`, ``, `${d.message || ""}`
@@ -381,7 +381,7 @@
         const email = (fd.get("email") || "").trim();
         if (!email) return;
         btn.disabled = true;
-        // add to the list (best-effort — never block delivery of the promised chapter)
+        // add to the list (best-effort, never block delivery of the promised chapter)
         try {
           await fetch(CONFIG.subscribeEndpoint, {
             method: "POST", headers: { "Content-Type": "application/json" },
@@ -462,8 +462,8 @@
     document.head.appendChild(s);
   }
   function wireIntegrations() {
-    // Buy-the-Book buttons are handled at click time (language-aware) — nothing to set here.
-    // Calendly "Book a Call" buttons — show only when configured
+    // Buy-the-Book buttons are handled at click time (language-aware), nothing to set here.
+    // Calendly "Book a Call" buttons, show only when configured
     document.querySelectorAll("[data-calendly]").forEach((b) => {
       if (CONFIG.calendlyUrl) { b.hidden = false; b.dataset.href = CONFIG.calendlyUrl; }
       else { b.hidden = true; }
@@ -484,7 +484,7 @@
     const mobile = window.innerWidth < 760;
     const COUNT = reduce ? 0 : (mobile ? 46 : 96);
 
-    // mouse parallax — gently shifts the whole field so the site feels alive
+    // mouse parallax, gently shifts the whole field so the site feels alive
     let mx = 0, my = 0, tmx = 0, tmy = 0;
     window.addEventListener("mousemove", (e) => {
       tmx = (e.clientX / innerWidth - 0.5) * 2;   // -1..1
@@ -530,7 +530,7 @@
       if (sec.classList.contains("section--cream") || sec.classList.contains("subhero")) return 0.32;
       if (sec.classList.contains("hero") || sec.classList.contains("section--final") ||
           sec.classList.contains("temple-hero")) return 1.25;
-      return 0.95; // navy — alive
+      return 0.95; // navy, alive
     }
 
     let curI = 0.8;
@@ -560,7 +560,7 @@
         const py = p.y - my * p.par;
         const R = p.r * 4.2;
 
-        // soft golden halo — saturated gold reads on BOTH cream and navy
+        // soft golden halo, saturated gold reads on BOTH cream and navy
         const grd = ctx.createRadialGradient(px, py, 0, px, py, R);
         grd.addColorStop(0,    `rgba(232,190,96,${p.a})`);
         grd.addColorStop(0.4,  `rgba(212,166,58,${p.a * 0.55})`);

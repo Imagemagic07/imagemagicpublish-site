@@ -1,5 +1,5 @@
 /* =========================================================================
-   ImageMagicPublish — Bilingual content dictionary (EN / FR)
+   ImageMagicPublish, Bilingual content dictionary (EN / FR)
    Edit text here. Keys map to data-i18n / data-list / data-list-options /
    data-ph attributes in index.html. HTML is allowed in string values.
    ========================================================================= */
@@ -56,32 +56,32 @@ window.I18N = {
     "praise.media.desc": "Featured in an on-air interview with Frère Bénédic Lamartinière, a trusted voice in the Haitian faith community.",
     "praise.media.cta": "Watch the Interviews",
 
-    /* HOME — MISSION */
+    /* HOME, MISSION */
     "home.mission.title": "A Platform for Clarity, Dignity, and Awakening",
     "home.mission.body": "ImageMagicPublish exists to bring difficult but necessary conversations into the light with elegance, wisdom, and spiritual depth. Through books, conferences, media appearances, and community-centered education, the mission is to help individuals, families, and organizations speak about the body, sexuality, dignity, identity, and responsibility with clarity and respect.",
 
-    /* HOME — FEATURED BOOK */
+    /* HOME, FEATURED BOOK */
     "home.featured.eyebrow": "The Book",
-    "home.featured.body": "For too long, sexuality has been trapped between silence, shame, confusion, entertainment, and misinformation. <em>The Sacred Taboo</em> opens a different path — a conversation that is honest, spiritual, intelligent, respectful, and deeply human.",
+    "home.featured.body": "For too long, sexuality has been trapped between silence, shame, confusion, entertainment, and misinformation. <em>The Sacred Taboo</em> opens a different path, a conversation that is honest, spiritual, intelligent, respectful, and deeply human.",
 
-    /* HOME — CONFERENCE PREVIEW */
+    /* HOME, CONFERENCE PREVIEW */
     "home.confprev.eyebrow": "The Conference Project",
 
-    /* HOME — SPEAKING INVITATION */
+    /* HOME, SPEAKING INVITATION */
     "home.speak.eyebrow": "Speaking & Booking",
     "home.speak.title": "Invite Dentz-Roll to Your Stage",
     "home.speak.body": "From churches and schools to libraries, conferences, and community programs, Dentz-Roll Bonheur brings a message of dignity, clarity, and awakening to audiences ready for an honest conversation.",
 
-    /* HOME — PILLARS */
+    /* HOME, PILLARS */
     "home.pillars.title": "One Universe · Three Pillars",
     "home.pillars.author.t": "The Author",
-    "home.pillars.author.d": "Dentz-Roll Bonheur — author, speaker, creative director, and founder of ImageMagicPublish LLC.",
+    "home.pillars.author.d": "Dentz-Roll Bonheur, author, speaker, creative director, and founder of ImageMagicPublish LLC.",
     "home.pillars.author.cta": "Meet Dentz-Roll →",
     "home.pillars.book.t": "The Book",
-    "home.pillars.book.d": "The Sacred Taboo — a spiritual and conscious exploration of sexuality, dignity, energy, and the human temple.",
+    "home.pillars.book.d": "The Sacred Taboo, a spiritual and conscious exploration of sexuality, dignity, energy, and the human temple.",
     "home.pillars.book.cta": "Explore the Book →",
     "home.pillars.conf.t": "The Conference",
-    "home.pillars.conf.d": "Guard Your Temple — a powerful conference experience for youth, families, churches, schools, and communities.",
+    "home.pillars.conf.d": "Guard Your Temple, a powerful conference experience for youth, families, churches, schools, and communities.",
     "home.pillars.conf.cta": "Enter the Movement →",
 
     /* BOOK */
@@ -89,7 +89,7 @@ window.I18N = {
     "book.title": "The Sacred Taboo: Secrets of Sex That Awaken",
     "book.author": "by Dentz-Roll Bonheur, MBA",
     "book.subtitle": "A spiritual and conscious exploration of sexuality, dignity, energy, and the human temple.",
-    "book.desc.p1": "Whether you see yourself as spiritual, religious, scientific, or simply a seeker of truth, one reality remains: the human body is more than flesh. It is a living architecture of microbiology, memory, energy, emotion, and meaning — a sacred structure where the visible and invisible meet.",
+    "book.desc.p1": "Whether you see yourself as spiritual, religious, scientific, or simply a seeker of truth, one reality remains: the human body is more than flesh. It is a living architecture of microbiology, memory, energy, emotion, and meaning, a sacred structure where the visible and invisible meet.",
     "book.desc.ask1": "But what happens when two living architectures encounter one another?",
     "book.desc.ask2": "What happens when two bodies, two histories, two nervous systems, and two energetic worlds enter into communion?",
     "book.desc.maybe1": "Maybe intimacy is more than pleasure.",
@@ -107,7 +107,7 @@ window.I18N = {
       "The influence of images, culture, and modern relationships.",
       "Pathways to reclaim, cleanse, elevate, and honor sexual energy."
     ],
-    "book.closing.p1": "This book is for those ready to move beyond shame, confusion, silence, and empty pleasure — and rediscover intimacy as something powerful, sacred, and transformative.",
+    "book.closing.p1": "This book is for those ready to move beyond shame, confusion, silence, and empty pleasure, and rediscover intimacy as something powerful, sacred, and transformative.",
     "book.closing.p2": "If you are ready to reclaim your body as a living temple, restore dignity to desire, and understand sexuality as an art of the soul, a science of the living, and a path toward awakening, then this book is your invitation.",
 
     /* TEMPLE */
@@ -174,8 +174,8 @@ window.I18N = {
     ],
     "temple.faq.title": "Frequently Asked Questions",
     "temple.faq.items": [
-      ["Who is Guard Your Temple designed for?", "Churches, youth ministries, schools, libraries, community centers, nonprofits, parent groups, and faith-based and educational programs — anyone serving young people and families who want an honest, respectful conversation about the body, dignity, and identity."],
-      ["Is the content appropriate for youth and faith settings?", "Yes. The conversation is respectful, dignity-centered, and spiritually grounded — never vulgar. The message and language are adapted to the age group and the setting, whether a church, a school, or a community center."],
+      ["Who is Guard Your Temple designed for?", "Churches, youth ministries, schools, libraries, community centers, nonprofits, parent groups, and faith-based and educational programs, anyone serving young people and families who want an honest, respectful conversation about the body, dignity, and identity."],
+      ["Is the content appropriate for youth and faith settings?", "Yes. The conversation is respectful, dignity-centered, and spiritually grounded, never vulgar. The message and language are adapted to the age group and the setting, whether a church, a school, or a community center."],
       ["What formats are available?", "A 60-minute keynote, a 90-minute interactive talk, a half-day youth workshop, a parent-and-youth conversation, a church or community conference, a library or school session, or a full pilot program with a partner organization."],
       ["Is it available in both English and French?", "Yes. Dentz-Roll Bonheur presents in English and French, which makes the experience accessible to a wide range of communities and audiences."],
       ["How do we bring Guard Your Temple to our community?", "Send a request through the contact and booking page or by email. Selected churches, schools, libraries, and nonprofits can also launch the first phase as a pilot program with documentation and an impact report."]
@@ -199,7 +199,7 @@ window.I18N = {
       ["Conference Creator", "Designing Guard Your Temple as a repeatable education model."]
     ],
     "about.voice.title": "A Voice for a Generation",
-    "about.voice.body": "Grounded in New York and reaching audiences far beyond it, Dentz-Roll speaks to a generation searching for clarity — bridging faith, culture, and modern life with honesty and depth.",
+    "about.voice.body": "Grounded in New York and reaching audiences far beyond it, Dentz-Roll speaks to a generation searching for clarity, bridging faith, culture, and modern life with honesty and depth.",
 
     /* SPEAKING */
     "speaking.eyebrow": "Speaking · Keynotes · Workshops",
@@ -212,7 +212,7 @@ window.I18N = {
     "speaking.video.title": "See the Conversation in Motion",
     "speaking.video.desc": "A conversation on The Sacred Taboo with Frère Bénédic Lamartinière of Télé Lafwa.",
     "speaking.quote.text": "We become what we eat. And we are programmed by what we listen to, what we watch, the people we surround ourselves with, and the energy we exchange through intimacy.",
-    "speaking.quote.by": "Dentz-Roll Bonheur — from the Télé Lafwa interview",
+    "speaking.quote.by": "Dentz-Roll Bonheur, from the Télé Lafwa interview",
     "speaking.testi.text": "The way you connected science, faith, and personal responsibility really made me stop and think. It was a blessing hearing you speak at the book club.",
     "speaking.testi.by": "Live audience member",
     "speaking.talks.title": "Signature Talks",
@@ -249,7 +249,7 @@ window.I18N = {
     /* CONTACT */
     "contact.eyebrow": "Contact · Booking",
     "contact.title": "Contact ImageMagicPublish",
-    "contact.intro": "For book inquiries, speaking invitations, conference bookings, partnerships, and sponsorships — reach out below.",
+    "contact.intro": "For book inquiries, speaking invitations, conference bookings, partnerships, and sponsorships, reach out below.",
     "contact.directLabel": "Or write directly:",
     "contact.orBook": "Prefer to talk? Book a quick call:",
     "cta.bookCall": "Book a Call",
@@ -265,8 +265,8 @@ window.I18N = {
       "Partnership", "Sponsorship", "General message"
     ],
     "form.sending": "Sending your message…",
-    "form.sent": "Thank you — your message has been sent. We will respond personally, usually within 1–2 business days.",
-    "form.error": "We couldn’t send it automatically — your email app will open so nothing is lost. Or write to imagemagicpublish@gmail.com.",
+    "form.sent": "Thank you. Your message has been sent. We will respond personally, usually within 1–2 business days.",
+    "form.error": "We couldn’t send it automatically. Your email app will open so nothing is lost. Or write to imagemagicpublish@gmail.com.",
 
     /* EMAIL CAPTURE */
     "email.title": "Join the Awakening",
@@ -278,7 +278,7 @@ window.I18N = {
     "email.error": "Something went wrong. Please try again, or email imagemagicpublish@gmail.com.",
     "lc.eyebrow": "A Free Gift",
     "lc.title": "The Lost Chapter",
-    "lc.body": "Enter your name and email and we’ll send you a free chapter of <em>The Sacred Taboo</em> — a taste of the conversation that awakens.",
+    "lc.body": "Enter your name and email and we’ll send you a free chapter of <em>The Sacred Taboo</em>, a taste of the conversation that awakens.",
     "lc.btn": "Send Me the Chapter",
     "lc.thanks": "Beautiful. Your free chapter is ready below.",
     "lc.download": "Download Your Chapter",
@@ -300,9 +300,9 @@ window.I18N = {
     "legal.eyebrow": "Legal",
     "legal.updated": "Last updated: July 1, 2026",
     "legal.privacy.title": "Privacy Policy",
-    "legal.privacy.body": "<p>ImageMagicPublish LLC (“we,” “us,” “our”) respects your privacy. This policy explains what information we collect through this website, how we use it, and the choices you have.</p><h3>Information we collect</h3><p>We only collect information you choose to give us:</p><ul><li><strong>Contact &amp; booking form:</strong> your name, email, phone, organization, reason for contact, and message.</li><li><strong>Newsletter &amp; free resources:</strong> your first name and email address when you subscribe or request the free chapter.</li><li><strong>Basic analytics:</strong> aggregate, privacy-friendly usage data (such as page views and country) that does not identify you personally.</li></ul><h3>How we use it</h3><ul><li>To respond to your inquiries and booking requests.</li><li>To send you the resources, updates, and information you requested.</li><li>To understand, in aggregate, how the site is used so we can improve it.</li></ul><h3>Service providers</h3><p>We use trusted third parties only to operate this site and communicate with you — for example an email platform (MailerLite), website hosting and security (Cloudflare), and, where applicable, analytics and booking tools. These providers process data on our behalf under their own privacy terms. We do not sell your personal information.</p><h3>Cookies</h3><p>We aim to keep tracking minimal. If we enable analytics or advertising tools in the future, we will use them responsibly and update this policy.</p><h3>Your rights</h3><p>You may request access to, correction of, or deletion of your personal information, and you can unsubscribe from emails at any time using the link in any message. Depending on where you live (for example under GDPR or CCPA), you may have additional rights. To make a request, email us at the address below.</p><h3>Data retention</h3><p>We keep your information only as long as needed to respond to you and to provide the resources you requested, unless a longer period is required by law.</p><h3>Children</h3><p>This website is intended for adults and does not knowingly collect personal information from children.</p><h3>Contact</h3><p>Questions about this policy? Email <a href=\"mailto:imagemagicpublish@gmail.com\">imagemagicpublish@gmail.com</a>.</p>",
+    "legal.privacy.body": "<p>ImageMagicPublish LLC (“we,” “us,” “our”) respects your privacy. This policy explains what information we collect through this website, how we use it, and the choices you have.</p><h3>Information we collect</h3><p>We only collect information you choose to give us:</p><ul><li><strong>Contact &amp; booking form:</strong> your name, email, phone, organization, reason for contact, and message.</li><li><strong>Newsletter &amp; free resources:</strong> your first name and email address when you subscribe or request the free chapter.</li><li><strong>Basic analytics:</strong> aggregate, privacy-friendly usage data (such as page views and country) that does not identify you personally.</li></ul><h3>How we use it</h3><ul><li>To respond to your inquiries and booking requests.</li><li>To send you the resources, updates, and information you requested.</li><li>To understand, in aggregate, how the site is used so we can improve it.</li></ul><h3>Service providers</h3><p>We use trusted third parties only to operate this site and communicate with you, for example an email platform (MailerLite), website hosting and security (Cloudflare), and, where applicable, analytics and booking tools. These providers process data on our behalf under their own privacy terms. We do not sell your personal information.</p><h3>Cookies</h3><p>We aim to keep tracking minimal. If we enable analytics or advertising tools in the future, we will use them responsibly and update this policy.</p><h3>Your rights</h3><p>You may request access to, correction of, or deletion of your personal information, and you can unsubscribe from emails at any time using the link in any message. Depending on where you live (for example under GDPR or CCPA), you may have additional rights. To make a request, email us at the address below.</p><h3>Data retention</h3><p>We keep your information only as long as needed to respond to you and to provide the resources you requested, unless a longer period is required by law.</p><h3>Children</h3><p>This website is intended for adults and does not knowingly collect personal information from children.</p><h3>Contact</h3><p>Questions about this policy? Email <a href=\"mailto:imagemagicpublish@gmail.com\">imagemagicpublish@gmail.com</a>.</p>",
     "legal.terms.title": "Terms & Disclaimer",
-    "legal.terms.body": "<p>By using this website you agree to these terms. If you do not agree, please do not use the site.</p><h3>Use of this site</h3><p>You may use this website for lawful, personal, and informational purposes. You agree not to misuse it, attempt to disrupt it, or use it to harm others.</p><h3>Intellectual property</h3><p>All content on this site — including text, book excerpts, images, branding, and design — is owned by or licensed to ImageMagicPublish LLC and is protected by copyright. You may not copy, reproduce, or redistribute it without permission.</p><h3>The book &amp; external links</h3><p>Book purchases are completed on third-party retailers (such as Amazon). Those transactions are governed by the retailer’s own terms and privacy policies. We are not responsible for the content or practices of external sites we link to.</p><h3>Educational purpose — not professional advice</h3><p>The book, the conference project, and this website are offered for educational, spiritual, and reflective purposes. They address themes of the body, dignity, sexuality, relationships, and wellbeing, but they are not a substitute for professional medical, psychological, legal, or religious counsel. For personal concerns, please consult a qualified professional.</p><h3>Speaking &amp; conference bookings</h3><p>Submitting a booking or contact request is an inquiry, not a confirmed engagement. Details, availability, and any fees are agreed separately in writing.</p><h3>Limitation of liability</h3><p>This website is provided “as is,” without warranties of any kind. To the fullest extent permitted by law, ImageMagicPublish LLC is not liable for any damages arising from your use of the site.</p><h3>Governing law</h3><p>These terms are governed by the laws of the State of New York, USA.</p><h3>Changes</h3><p>We may update these terms from time to time. Continued use of the site means you accept the current version.</p><h3>Contact</h3><p>Questions? Email <a href=\"mailto:imagemagicpublish@gmail.com\">imagemagicpublish@gmail.com</a>.</p>"
+    "legal.terms.body": "<p>By using this website you agree to these terms. If you do not agree, please do not use the site.</p><h3>Use of this site</h3><p>You may use this website for lawful, personal, and informational purposes. You agree not to misuse it, attempt to disrupt it, or use it to harm others.</p><h3>Intellectual property</h3><p>All content on this site, including text, book excerpts, images, branding, and design, is owned by or licensed to ImageMagicPublish LLC and is protected by copyright. You may not copy, reproduce, or redistribute it without permission.</p><h3>The book &amp; external links</h3><p>Book purchases are completed on third-party retailers (such as Amazon). Those transactions are governed by the retailer’s own terms and privacy policies. We are not responsible for the content or practices of external sites we link to.</p><h3>Educational purpose, not professional advice</h3><p>The book, the conference project, and this website are offered for educational, spiritual, and reflective purposes. They address themes of the body, dignity, sexuality, relationships, and wellbeing, but they are not a substitute for professional medical, psychological, legal, or religious counsel. For personal concerns, please consult a qualified professional.</p><h3>Speaking &amp; conference bookings</h3><p>Submitting a booking or contact request is an inquiry, not a confirmed engagement. Details, availability, and any fees are agreed separately in writing.</p><h3>Limitation of liability</h3><p>This website is provided “as is,” without warranties of any kind. To the fullest extent permitted by law, ImageMagicPublish LLC is not liable for any damages arising from your use of the site.</p><h3>Governing law</h3><p>These terms are governed by the laws of the State of New York, USA.</p><h3>Changes</h3><p>We may update these terms from time to time. Continued use of the site means you accept the current version.</p><h3>Contact</h3><p>Questions? Email <a href=\"mailto:imagemagicpublish@gmail.com\">imagemagicpublish@gmail.com</a>.</p>"
   },
 
   /* ===================================================================== */
@@ -358,32 +358,32 @@ window.I18N = {
     "praise.media.desc": "Invité dans une interview télévisée avec Frère Bénédic Lamartinière, une voix respectée de la communauté de foi haïtienne.",
     "praise.media.cta": "Voir les Interviews",
 
-    /* HOME — MISSION */
+    /* HOME, MISSION */
     "home.mission.title": "Une Plateforme Pour La Clarté, La Dignité et L’Éveil",
     "home.mission.body": "ImageMagicPublish existe pour amener à la lumière des conversations difficiles mais nécessaires avec élégance, sagesse et profondeur spirituelle. À travers les livres, les conférences, les médias et l’éducation communautaire, la mission est d’aider les individus, les familles et les organisations à parler du corps, de la sexualité, de la dignité, de l’identité et de la responsabilité avec clarté et respect.",
 
-    /* HOME — FEATURED BOOK */
+    /* HOME, FEATURED BOOK */
     "home.featured.eyebrow": "Le Livre",
-    "home.featured.body": "Pendant trop longtemps, la sexualité a été enfermée entre le silence, la honte, la confusion, le divertissement et la désinformation. <em>Le Tabou Sacré</em> ouvre un autre chemin — une conversation honnête, spirituelle, intelligente, respectueuse et profondément humaine.",
+    "home.featured.body": "Pendant trop longtemps, la sexualité a été enfermée entre le silence, la honte, la confusion, le divertissement et la désinformation. <em>Le Tabou Sacré</em> ouvre un autre chemin, une conversation honnête, spirituelle, intelligente, respectueuse et profondément humaine.",
 
-    /* HOME — CONFERENCE PREVIEW */
+    /* HOME, CONFERENCE PREVIEW */
     "home.confprev.eyebrow": "Le Projet de Conférence",
 
-    /* HOME — SPEAKING INVITATION */
+    /* HOME, SPEAKING INVITATION */
     "home.speak.eyebrow": "Conférences & Réservations",
     "home.speak.title": "Invitez Dentz-Roll Sur Votre Scène",
     "home.speak.body": "Des églises et des écoles aux bibliothèques, conférences et programmes communautaires, Dentz-Roll Bonheur apporte un message de dignité, de clarté et d’éveil à des audiences prêtes pour une conversation honnête.",
 
-    /* HOME — PILLARS */
+    /* HOME, PILLARS */
     "home.pillars.title": "Un Univers · Trois Piliers",
     "home.pillars.author.t": "L’Auteur",
-    "home.pillars.author.d": "Dentz-Roll Bonheur — auteur, conférencier, directeur créatif et fondateur de ImageMagicPublish LLC.",
+    "home.pillars.author.d": "Dentz-Roll Bonheur, auteur, conférencier, directeur créatif et fondateur de ImageMagicPublish LLC.",
     "home.pillars.author.cta": "Rencontrer Dentz-Roll →",
     "home.pillars.book.t": "Le Livre",
-    "home.pillars.book.d": "Le Tabou Sacré — une exploration spirituelle et consciente de la sexualité, de la dignité, de l’énergie et du temple humain.",
+    "home.pillars.book.d": "Le Tabou Sacré, une exploration spirituelle et consciente de la sexualité, de la dignité, de l’énergie et du temple humain.",
     "home.pillars.book.cta": "Explorer le Livre →",
     "home.pillars.conf.t": "La Conférence",
-    "home.pillars.conf.d": "Garde Ton Temple — une expérience de conférence puissante pour les jeunes, les familles, les églises, les écoles et les communautés.",
+    "home.pillars.conf.d": "Garde Ton Temple, une expérience de conférence puissante pour les jeunes, les familles, les églises, les écoles et les communautés.",
     "home.pillars.conf.cta": "Entrer Dans le Mouvement →",
 
     /* BOOK */
@@ -391,7 +391,7 @@ window.I18N = {
     "book.title": "Le Tabou Sacré : Les Secrets du Sexe qui Éveille",
     "book.author": "par Dentz-Roll Bonheur, MBA",
     "book.subtitle": "Une exploration spirituelle et consciente de la sexualité, de la dignité, de l’énergie et du temple humain.",
-    "book.desc.p1": "Que vous vous considériez comme spirituel, religieux, scientifique ou simplement comme une personne en quête de vérité, une réalité demeure : le corps humain est bien plus que de la chair. Il est une architecture vivante de microbiologie, de mémoire, d’énergie, d’émotion et de sens — une structure sacrée où le visible et l’invisible se rencontrent.",
+    "book.desc.p1": "Que vous vous considériez comme spirituel, religieux, scientifique ou simplement comme une personne en quête de vérité, une réalité demeure : le corps humain est bien plus que de la chair. Il est une architecture vivante de microbiologie, de mémoire, d’énergie, d’émotion et de sens, une structure sacrée où le visible et l’invisible se rencontrent.",
     "book.desc.ask1": "Mais que se passe-t-il lorsque deux architectures vivantes se rencontrent ?",
     "book.desc.ask2": "Que se passe-t-il lorsque deux corps, deux histoires, deux systèmes nerveux et deux mondes énergétiques entrent en communion ?",
     "book.desc.maybe1": "Peut-être que l’intimité est plus qu’un plaisir.",
@@ -409,7 +409,7 @@ window.I18N = {
       "L’influence des images, de la culture et des relations modernes.",
       "Des voies pour reprendre, purifier, élever et honorer son énergie sexuelle."
     ],
-    "book.closing.p1": "Ce livre s’adresse à celles et ceux qui sont prêts à dépasser la honte, la confusion, le silence et le plaisir vide — pour redécouvrir l’intimité comme une force puissante, sacrée et transformatrice.",
+    "book.closing.p1": "Ce livre s’adresse à celles et ceux qui sont prêts à dépasser la honte, la confusion, le silence et le plaisir vide, pour redécouvrir l’intimité comme une force puissante, sacrée et transformatrice.",
     "book.closing.p2": "Si vous êtes prêt à reprendre possession de votre corps comme temple vivant, à restaurer la dignité du désir, et à comprendre la sexualité comme un art de l’âme, une science du vivant et un chemin vers l’éveil, alors ce livre est votre invitation.",
 
     /* TEMPLE */
@@ -476,8 +476,8 @@ window.I18N = {
     ],
     "temple.faq.title": "Questions Fréquentes",
     "temple.faq.items": [
-      ["À qui s’adresse Garde Ton Temple ?", "Aux églises, ministères de jeunesse, écoles, bibliothèques, centres communautaires, organisations à but non lucratif, groupes de parents et programmes éducatifs et de foi — à tous ceux qui servent les jeunes et les familles et souhaitent une conversation honnête et respectueuse sur le corps, la dignité et l’identité."],
-      ["Le contenu est-il adapté aux jeunes et aux milieux de foi ?", "Oui. La conversation est respectueuse, centrée sur la dignité et spirituellement enracinée — jamais vulgaire. Le message et le langage sont adaptés à l’âge et au contexte, qu’il s’agisse d’une église, d’une école ou d’un centre communautaire."],
+      ["À qui s’adresse Garde Ton Temple ?", "Aux églises, ministères de jeunesse, écoles, bibliothèques, centres communautaires, organisations à but non lucratif, groupes de parents et programmes éducatifs et de foi, à tous ceux qui servent les jeunes et les familles et souhaitent une conversation honnête et respectueuse sur le corps, la dignité et l’identité."],
+      ["Le contenu est-il adapté aux jeunes et aux milieux de foi ?", "Oui. La conversation est respectueuse, centrée sur la dignité et spirituellement enracinée, jamais vulgaire. Le message et le langage sont adaptés à l’âge et au contexte, qu’il s’agisse d’une église, d’une école ou d’un centre communautaire."],
       ["Quels formats sont disponibles ?", "Une conférence principale de 60 minutes, une présentation interactive de 90 minutes, un atelier jeunesse d’une demi-journée, une conversation parents et jeunes, une conférence communautaire en église, une session en bibliothèque ou école, ou un programme pilote complet avec une organisation partenaire."],
       ["Est-ce disponible en anglais et en français ?", "Oui. Dentz-Roll Bonheur intervient en anglais et en français, ce qui rend l’expérience accessible à un large éventail de communautés et d’audiences."],
       ["Comment amener Garde Ton Temple dans notre communauté ?", "Envoyez une demande via la page de contact et de réservation ou par email. Des églises, écoles, bibliothèques et organisations sélectionnées peuvent aussi lancer la première phase comme programme pilote, avec documentation et rapport d’impact."]
@@ -501,7 +501,7 @@ window.I18N = {
       ["Créateur de Conférences", "Concevoir Garde Ton Temple comme un modèle d’éducation reproductible."]
     ],
     "about.voice.title": "Une Voix Pour Une Génération",
-    "about.voice.body": "Basé à New York et touchant des audiences bien au-delà, Dentz-Roll s’adresse à une génération en quête de clarté — reliant la foi, la culture et la vie moderne avec honnêteté et profondeur.",
+    "about.voice.body": "Basé à New York et touchant des audiences bien au-delà, Dentz-Roll s’adresse à une génération en quête de clarté, reliant la foi, la culture et la vie moderne avec honnêteté et profondeur.",
 
     /* SPEAKING */
     "speaking.eyebrow": "Conférences · Keynotes · Ateliers",
@@ -514,7 +514,7 @@ window.I18N = {
     "speaking.video.title": "Voir la Conversation en Mouvement",
     "speaking.video.desc": "Une conversation autour du Tabou Sacré avec Frère Bénédic Lamartinière de Télé Lafwa.",
     "speaking.quote.text": "Nous devenons ce que nous mangeons. Et nous sommes programmés par ce que nous écoutons, ce que nous regardons, les gens dont nous nous entourons, et l’énergie que nous échangeons à travers l’intimité.",
-    "speaking.quote.by": "Dentz-Roll Bonheur — extrait de l’interview sur Télé Lafwa",
+    "speaking.quote.by": "Dentz-Roll Bonheur, extrait de l’interview sur Télé Lafwa",
     "speaking.testi.text": "La façon dont vous avez relié la science, la foi et la responsabilité personnelle m’a vraiment fait réfléchir. Ce fut une bénédiction de vous entendre parler au club de lecture.",
     "speaking.testi.by": "Membre du public",
     "speaking.talks.title": "Conférences Signature",
@@ -551,7 +551,7 @@ window.I18N = {
     /* CONTACT */
     "contact.eyebrow": "Contact · Réservation",
     "contact.title": "Contacter ImageMagicPublish",
-    "contact.intro": "Pour les questions sur le livre, les invitations à parler, les réservations de conférence, les partenariats et les commandites — écrivez-nous ci-dessous.",
+    "contact.intro": "Pour les questions sur le livre, les invitations à parler, les réservations de conférence, les partenariats et les commandites, écrivez-nous ci-dessous.",
     "contact.directLabel": "Ou écrivez directement :",
     "contact.orBook": "Vous préférez parler ? Réservez un court appel :",
     "cta.bookCall": "Réserver un Appel",
@@ -567,8 +567,8 @@ window.I18N = {
       "Partenariat", "Commandite", "Message général"
     ],
     "form.sending": "Envoi de votre message…",
-    "form.sent": "Merci — votre message a été envoyé. Nous vous répondrons personnellement, généralement sous 1 à 2 jours ouvrables.",
-    "form.error": "Nous n’avons pas pu l’envoyer automatiquement — votre application email va s’ouvrir pour ne rien perdre. Ou écrivez à imagemagicpublish@gmail.com.",
+    "form.sent": "Merci. Votre message a été envoyé. Nous vous répondrons personnellement, généralement sous 1 à 2 jours ouvrables.",
+    "form.error": "Nous n’avons pas pu l’envoyer automatiquement. Votre application email va s’ouvrir pour ne rien perdre. Ou écrivez à imagemagicpublish@gmail.com.",
 
     /* EMAIL CAPTURE */
     "email.title": "Rejoindre l’Éveil",
@@ -580,7 +580,7 @@ window.I18N = {
     "email.error": "Une erreur s’est produite. Réessayez, ou écrivez à imagemagicpublish@gmail.com.",
     "lc.eyebrow": "Un Cadeau Gratuit",
     "lc.title": "Le Chapitre Perdu",
-    "lc.body": "Entrez votre nom et votre email et nous vous enverrons un chapitre gratuit de <em>Le Tabou Sacré</em> — un avant-goût de la conversation qui éveille.",
+    "lc.body": "Entrez votre nom et votre email et nous vous enverrons un chapitre gratuit de <em>Le Tabou Sacré</em>, un avant-goût de la conversation qui éveille.",
     "lc.btn": "Envoyez-moi le Chapitre",
     "lc.thanks": "Magnifique. Votre chapitre gratuit est prêt ci-dessous.",
     "lc.download": "Télécharger Votre Chapitre",
@@ -602,8 +602,8 @@ window.I18N = {
     "legal.eyebrow": "Mentions Légales",
     "legal.updated": "Dernière mise à jour : 1 juillet 2026",
     "legal.privacy.title": "Politique de Confidentialité",
-    "legal.privacy.body": "<p>ImageMagicPublish LLC (« nous », « notre ») respecte votre vie privée. Cette politique explique quelles informations nous collectons via ce site, comment nous les utilisons et les choix dont vous disposez.</p><h3>Informations que nous collectons</h3><p>Nous ne collectons que les informations que vous choisissez de nous fournir :</p><ul><li><strong>Formulaire de contact et de réservation :</strong> nom, email, téléphone, organisation, raison du contact et message.</li><li><strong>Newsletter et ressources gratuites :</strong> votre prénom et votre adresse email lorsque vous vous abonnez ou demandez le chapitre gratuit.</li><li><strong>Statistiques de base :</strong> des données d’usage agrégées et respectueuses de la vie privée (pages vues, pays) qui ne vous identifient pas personnellement.</li></ul><h3>Comment nous les utilisons</h3><ul><li>Pour répondre à vos demandes et réservations.</li><li>Pour vous envoyer les ressources, nouvelles et informations demandées.</li><li>Pour comprendre, de façon agrégée, l’usage du site afin de l’améliorer.</li></ul><h3>Prestataires</h3><p>Nous faisons appel à des tiers de confiance uniquement pour faire fonctionner ce site et communiquer avec vous — par exemple une plateforme email (MailerLite), l’hébergement et la sécurité du site (Cloudflare) et, le cas échéant, des outils de statistiques et de réservation. Ces prestataires traitent les données pour notre compte selon leurs propres conditions. Nous ne vendons pas vos données personnelles.</p><h3>Cookies</h3><p>Nous cherchons à limiter le suivi au minimum. Si nous activons à l’avenir des outils de statistiques ou de publicité, nous les utiliserons de manière responsable et mettrons cette politique à jour.</p><h3>Vos droits</h3><p>Vous pouvez demander l’accès, la correction ou la suppression de vos données personnelles, et vous désabonner des emails à tout moment via le lien présent dans chaque message. Selon votre lieu de résidence (par exemple RGPD ou CCPA), vous pouvez disposer de droits supplémentaires. Pour toute demande, écrivez-nous à l’adresse ci-dessous.</p><h3>Conservation des données</h3><p>Nous conservons vos informations uniquement le temps nécessaire pour vous répondre et fournir les ressources demandées, sauf obligation légale de conservation plus longue.</p><h3>Enfants</h3><p>Ce site est destiné aux adultes et ne collecte pas sciemment de données personnelles auprès d’enfants.</p><h3>Contact</h3><p>Des questions sur cette politique ? Écrivez à <a href=\"mailto:imagemagicpublish@gmail.com\">imagemagicpublish@gmail.com</a>.</p>",
+    "legal.privacy.body": "<p>ImageMagicPublish LLC (« nous », « notre ») respecte votre vie privée. Cette politique explique quelles informations nous collectons via ce site, comment nous les utilisons et les choix dont vous disposez.</p><h3>Informations que nous collectons</h3><p>Nous ne collectons que les informations que vous choisissez de nous fournir :</p><ul><li><strong>Formulaire de contact et de réservation :</strong> nom, email, téléphone, organisation, raison du contact et message.</li><li><strong>Newsletter et ressources gratuites :</strong> votre prénom et votre adresse email lorsque vous vous abonnez ou demandez le chapitre gratuit.</li><li><strong>Statistiques de base :</strong> des données d’usage agrégées et respectueuses de la vie privée (pages vues, pays) qui ne vous identifient pas personnellement.</li></ul><h3>Comment nous les utilisons</h3><ul><li>Pour répondre à vos demandes et réservations.</li><li>Pour vous envoyer les ressources, nouvelles et informations demandées.</li><li>Pour comprendre, de façon agrégée, l’usage du site afin de l’améliorer.</li></ul><h3>Prestataires</h3><p>Nous faisons appel à des tiers de confiance uniquement pour faire fonctionner ce site et communiquer avec vous, par exemple une plateforme email (MailerLite), l’hébergement et la sécurité du site (Cloudflare) et, le cas échéant, des outils de statistiques et de réservation. Ces prestataires traitent les données pour notre compte selon leurs propres conditions. Nous ne vendons pas vos données personnelles.</p><h3>Cookies</h3><p>Nous cherchons à limiter le suivi au minimum. Si nous activons à l’avenir des outils de statistiques ou de publicité, nous les utiliserons de manière responsable et mettrons cette politique à jour.</p><h3>Vos droits</h3><p>Vous pouvez demander l’accès, la correction ou la suppression de vos données personnelles, et vous désabonner des emails à tout moment via le lien présent dans chaque message. Selon votre lieu de résidence (par exemple RGPD ou CCPA), vous pouvez disposer de droits supplémentaires. Pour toute demande, écrivez-nous à l’adresse ci-dessous.</p><h3>Conservation des données</h3><p>Nous conservons vos informations uniquement le temps nécessaire pour vous répondre et fournir les ressources demandées, sauf obligation légale de conservation plus longue.</p><h3>Enfants</h3><p>Ce site est destiné aux adultes et ne collecte pas sciemment de données personnelles auprès d’enfants.</p><h3>Contact</h3><p>Des questions sur cette politique ? Écrivez à <a href=\"mailto:imagemagicpublish@gmail.com\">imagemagicpublish@gmail.com</a>.</p>",
     "legal.terms.title": "Conditions & Avertissement",
-    "legal.terms.body": "<p>En utilisant ce site, vous acceptez ces conditions. Si vous n’êtes pas d’accord, veuillez ne pas utiliser le site.</p><h3>Utilisation du site</h3><p>Vous pouvez utiliser ce site à des fins licites, personnelles et informatives. Vous vous engagez à ne pas en faire un usage abusif, à ne pas le perturber et à ne pas l’utiliser pour nuire à autrui.</p><h3>Propriété intellectuelle</h3><p>Tout le contenu de ce site — textes, extraits du livre, images, identité de marque et design — appartient à ImageMagicPublish LLC ou lui est concédé sous licence, et est protégé par le droit d’auteur. Vous ne pouvez pas le copier, le reproduire ou le redistribuer sans autorisation.</p><h3>Le livre et les liens externes</h3><p>Les achats du livre se font sur des plateformes tierces (comme Amazon). Ces transactions sont régies par les conditions et politiques de confidentialité du revendeur. Nous ne sommes pas responsables du contenu ou des pratiques des sites externes vers lesquels nous renvoyons.</p><h3>But éducatif — pas un conseil professionnel</h3><p>Le livre, le projet de conférence et ce site sont proposés à des fins éducatives, spirituelles et de réflexion. Ils abordent des thèmes liés au corps, à la dignité, à la sexualité, aux relations et au bien-être, mais ne remplacent pas un conseil médical, psychologique, juridique ou religieux professionnel. Pour toute préoccupation personnelle, veuillez consulter un professionnel qualifié.</p><h3>Conférences et réservations</h3><p>L’envoi d’une demande de réservation ou de contact constitue une demande, et non un engagement confirmé. Les détails, la disponibilité et les éventuels frais sont convenus séparément par écrit.</p><h3>Limitation de responsabilité</h3><p>Ce site est fourni « tel quel », sans garantie d’aucune sorte. Dans toute la mesure permise par la loi, ImageMagicPublish LLC n’est pas responsable des dommages découlant de votre utilisation du site.</p><h3>Droit applicable</h3><p>Ces conditions sont régies par les lois de l’État de New York, États-Unis.</p><h3>Modifications</h3><p>Nous pouvons mettre à jour ces conditions de temps à autre. La poursuite de l’utilisation du site vaut acceptation de la version en vigueur.</p><h3>Contact</h3><p>Des questions ? Écrivez à <a href=\"mailto:imagemagicpublish@gmail.com\">imagemagicpublish@gmail.com</a>.</p>"
+    "legal.terms.body": "<p>En utilisant ce site, vous acceptez ces conditions. Si vous n’êtes pas d’accord, veuillez ne pas utiliser le site.</p><h3>Utilisation du site</h3><p>Vous pouvez utiliser ce site à des fins licites, personnelles et informatives. Vous vous engagez à ne pas en faire un usage abusif, à ne pas le perturber et à ne pas l’utiliser pour nuire à autrui.</p><h3>Propriété intellectuelle</h3><p>Tout le contenu de ce site, textes, extraits du livre, images, identité de marque et design, appartient à ImageMagicPublish LLC ou lui est concédé sous licence, et est protégé par le droit d’auteur. Vous ne pouvez pas le copier, le reproduire ou le redistribuer sans autorisation.</p><h3>Le livre et les liens externes</h3><p>Les achats du livre se font sur des plateformes tierces (comme Amazon). Ces transactions sont régies par les conditions et politiques de confidentialité du revendeur. Nous ne sommes pas responsables du contenu ou des pratiques des sites externes vers lesquels nous renvoyons.</p><h3>But éducatif, pas un conseil professionnel</h3><p>Le livre, le projet de conférence et ce site sont proposés à des fins éducatives, spirituelles et de réflexion. Ils abordent des thèmes liés au corps, à la dignité, à la sexualité, aux relations et au bien-être, mais ne remplacent pas un conseil médical, psychologique, juridique ou religieux professionnel. Pour toute préoccupation personnelle, veuillez consulter un professionnel qualifié.</p><h3>Conférences et réservations</h3><p>L’envoi d’une demande de réservation ou de contact constitue une demande, et non un engagement confirmé. Les détails, la disponibilité et les éventuels frais sont convenus séparément par écrit.</p><h3>Limitation de responsabilité</h3><p>Ce site est fourni « tel quel », sans garantie d’aucune sorte. Dans toute la mesure permise par la loi, ImageMagicPublish LLC n’est pas responsable des dommages découlant de votre utilisation du site.</p><h3>Droit applicable</h3><p>Ces conditions sont régies par les lois de l’État de New York, États-Unis.</p><h3>Modifications</h3><p>Nous pouvons mettre à jour ces conditions de temps à autre. La poursuite de l’utilisation du site vaut acceptation de la version en vigueur.</p><h3>Contact</h3><p>Des questions ? Écrivez à <a href=\"mailto:imagemagicpublish@gmail.com\">imagemagicpublish@gmail.com</a>.</p>"
   }
 };
