@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Dentz-Roll Bonheur, Fiche du Conférencier</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
+<style>
+  :root{
+    --navy:#081423; --midnight:#10263F; --ivory:#F7F0E3; --champagne:#E7D6B4;
+    --gold:#C9A227; --gold-hi:#E6C25A; --ink:#1c1208; --ink-soft:#4a3d2a;
+    --serif:"Cormorant Garamond",Georgia,serif; --sans:"Jost",system-ui,sans-serif;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html,body{background:#5a5a5a;font-family:var(--sans);color:var(--ink);-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  .sheet{
+    width:8.5in;min-height:11in;margin:24px auto;background:var(--ivory);
+    display:flex;flex-direction:column;box-shadow:0 20px 60px rgba(0,0,0,.4);overflow:hidden;
+  }
+  /* ---------- HEADER ---------- */
+  .head{background:linear-gradient(135deg,var(--navy),var(--midnight));color:var(--ivory);
+    padding:.32in .55in .28in;display:flex;align-items:center;gap:.34in;
+    border-bottom:3px solid var(--gold)}
+  .head img{width:1.02in;height:1.02in;flex:none}
+  .head__name{font-family:var(--serif);font-size:30pt;font-weight:700;letter-spacing:.4px;line-height:1}
+  .head__name b{color:var(--gold-hi);font-weight:700}
+  .head__role{font-family:var(--sans);font-size:9pt;letter-spacing:3px;text-transform:uppercase;
+    color:var(--champagne);margin-top:7px;font-weight:400}
+  .head__brands{font-family:var(--serif);font-style:italic;font-size:12.5pt;color:var(--gold-hi);margin-top:6px}
+  /* ---------- BODY ---------- */
+  .body{padding:.26in .55in .22in;flex:1;display:grid;grid-template-columns:1.62fr 1fr;gap:.42in}
+  .lead{font-family:var(--serif);font-size:13.2pt;line-height:1.38;color:var(--ink);margin-bottom:.13in}
+  .lead b{color:var(--navy)}
+  h2.sec{font-family:var(--sans);font-size:8.5pt;letter-spacing:2.6px;text-transform:uppercase;
+    color:var(--gold);font-weight:600;margin:.16in 0 .1in;padding-bottom:5px;
+    border-bottom:1px solid rgba(201,162,39,.4)}
+  h2.sec:first-child{margin-top:0}
+  .mods{list-style:none;display:flex;flex-direction:column;gap:5px}
+  .mods li{font-size:9.6pt;line-height:1.3;padding-left:16px;position:relative;color:var(--ink)}
+  .mods li::before{content:"";position:absolute;left:0;top:6px;width:6px;height:6px;
+    background:var(--gold);transform:rotate(45deg)}
+  .mods li b{font-family:var(--serif);font-size:11.5pt;color:var(--navy);font-weight:600}
+  .two{display:grid;grid-template-columns:1fr 1fr;gap:.14in .3in}
+  .mini{font-size:9pt;line-height:1.34;color:var(--ink-soft)}
+  .mini b{color:var(--navy);font-weight:600}
+  /* right column */
+  .card{background:#fff;border:1px solid var(--champagne);border-radius:8px;padding:.15in .18in;
+    box-shadow:0 4px 14px rgba(8,20,35,.06);margin-bottom:.15in}
+  .book{display:flex;gap:.16in;align-items:center}
+  .book img{width:.92in;height:auto;border-radius:3px;box-shadow:0 4px 12px rgba(8,20,35,.25);flex:none}
+  .book__t{font-family:var(--serif);font-size:12.5pt;font-weight:600;color:var(--navy);line-height:1.12}
+  .book__s{font-size:8.2pt;color:var(--ink-soft);margin-top:4px;line-height:1.3}
+  .stars{color:var(--gold);font-size:9pt;letter-spacing:1px}
+  .quote{font-family:var(--serif);font-style:italic;font-size:11.4pt;line-height:1.36;color:var(--navy)}
+  .quote__by{font-family:var(--sans);font-style:normal;font-size:8pt;letter-spacing:1.4px;
+    text-transform:uppercase;color:var(--gold);margin-top:8px}
+  .feat{font-size:9pt;color:var(--ink-soft);line-height:1.34}
+  .feat b{color:var(--navy)}
+  .portrait{width:100%;height:1.9in;object-fit:cover;object-position:center 7%;border-radius:8px;
+    border:1px solid var(--champagne);margin-bottom:.16in}
+  /* ---------- FOOTER ---------- */
+  .foot{background:linear-gradient(135deg,var(--navy),var(--midnight));color:var(--ivory);
+    padding:.2in .55in;display:flex;justify-content:space-between;align-items:center;
+    border-top:3px solid var(--gold);gap:.3in}
+  .foot__cta{font-family:var(--serif);font-size:15pt;font-weight:600;color:var(--gold-hi);line-height:1.1}
+  .foot__info{font-size:8.6pt;line-height:1.55;text-align:right;color:var(--champagne)}
+  .foot__info b{color:#fff}
+  a{color:inherit;text-decoration:none}
+  /* ---------- PRINT ---------- */
+  @page{size:Letter;margin:0}
+  @media print{
+    html,body{background:#fff}
+    .sheet{margin:0;box-shadow:none;width:100%;min-height:100vh}
+    .print-hide{display:none!important}
+  }
+  .print-hide{position:fixed;top:14px;left:50%;transform:translateX(-50%);z-index:9;
+    background:var(--navy);color:var(--gold-hi);font-family:var(--sans);font-size:12px;
+    padding:9px 16px;border-radius:30px;box-shadow:0 6px 20px rgba(0,0,0,.3)}
+</style>
+</head>
+<body>
+<div class="print-hide">Astuce : Imprimer → <b>Enregistrer en PDF</b> (Letter, marges : Aucune) pour exporter votre fiche.</div>
+
+<div class="sheet">
+
+  <!-- HEADER -->
+  <header class="head">
+    <img src="assets/logo.png" alt="ImageMagicPublish" />
+    <div>
+      <div class="head__name">Dentz-Roll <b>Bonheur</b>, MBA</div>
+      <div class="head__role">Auteur · Conférencier · Éducateur Communautaire</div>
+      <div class="head__brands">Garde Ton Temple &nbsp;·&nbsp; Le Tabou Sacré</div>
+    </div>
+  </header>
+
+  <!-- BODY -->
+  <div class="body">
+
+    <!-- LEFT COLUMN -->
+    <div>
+      <p class="lead">Dentz-Roll Bonheur apporte une conversation rare dans les écoles, les églises et les conférences : <b>honnête, digne et éveillante</b>. À travers son livre <b>Le Tabou Sacré</b> et son programme <b>Garde Ton Temple</b>, il aide les jeunes et les adultes à retrouver le corps comme sacré, et à parler d’intimité, d’identité et de dignité sans honte.</p>
+
+      <h2 class="sec">Garde Ton Temple, le programme en 6 volets</h2>
+      <ul class="mods">
+        <li><b>Mon Corps N’est Pas un Objet.</b> Dignité, identité, valeur et estime de soi.</li>
+        <li><b>Le Corps Se Souvient.</b> Santé émotionnelle, blessures invisibles, conséquences relationnelles.</li>
+        <li><b>Consentement, Limites et Respect.</b> Pression, manipulation, refus, communication saine.</li>
+        <li><b>Les Médias et la Formation du Désir.</b> Réseaux sociaux, images, musique, films, pornographie, environnement.</li>
+        <li><b>Masculinité Consciente et Féminité Respectée.</b> Respect mutuel, responsabilité, protection de soi et des autres.</li>
+        <li><b>Briser les Cycles et Bâtir l’Avenir.</b> Honte, silence, schémas familiaux, relations saines, leadership.</li>
+      </ul>
+
+      <div class="two" style="margin-top:.16in">
+        <div>
+          <h2 class="sec">Formats</h2>
+          <p class="mini"><b>Keynote ou conférence</b> · <b>Atelier interactif</b> · <b>Série de sessions</b> · <b>Interview, panel &amp; média</b> · Service d’église ou retraite</p>
+        </div>
+        <div>
+          <h2 class="sec">À Qui Il S’adresse</h2>
+          <p class="mini">Écoles &amp; universités · Églises &amp; ministères de jeunesse · Conférences, associations &amp; bibliothèques · Parents &amp; éducateurs. De 14 à 25 ans et les adultes qui les accompagnent.</p>
+        </div>
+      </div>
+
+      <h2 class="sec" style="margin-top:.2in">Pourquoi C’est Important</h2>
+      <p class="mini">Trop souvent, le corps et l’intimité s’apprennent dans la honte et le silence, ou dans le bruit du monde, mais jamais dans la sagesse. Dentz apporte la conversation honnête, respectueuse et spirituellement enracinée que la plupart des salles évitent, et la tient avec chaleur, présence et dignité. Disponible en <b>anglais &amp; français</b>.</p>
+    </div>
+
+    <!-- RIGHT COLUMN -->
+    <div>
+      <img class="portrait" src="assets/author-portrait.jpg" alt="Dentz-Roll Bonheur" />
+
+      <div class="card book">
+        <img src="assets/cover-fr.png" alt="Le Tabou Sacré" />
+        <div>
+          <div class="book__t">Le Tabou Sacré</div>
+          <div class="book__s">Les Secrets du Sexe qui Éveille. Le livre acclamé de l’auteur sur le corps, l’intimité &amp; la dignité.</div>
+          <div class="stars">★★★★★ <span style="color:var(--ink-soft);font-family:var(--sans);font-size:7.5pt">5.0 · Amazon</span></div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="quote">« La façon dont vous avez relié la science, la foi et la responsabilité personnelle m’a vraiment fait réfléchir. Ce fut une bénédiction de vous entendre parler. »</div>
+        <div class="quote__by">Membre du public · Spectateur de Télé Lafwa</div>
+      </div>
+
+      <p class="feat" style="padding:0 .04in"><b>À propos :</b> Auteur du <i>Tabou Sacré</i>, vu sur <b>Télé Lafwa</b>, conférencier et éducateur communautaire avec plus de 10 ans de leadership, de grands événements et de communication multiculturelle, et des années d’éducation des jeunes en milieu scolaire.</p>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="foot">
+    <div class="foot__cta">Invitez Dentz-Roll Bonheur<br>sur votre scène.</div>
+    <div class="foot__info">
+      <b>imagemagicpublish.com</b><br>
+      imagemagicpublish@gmail.com<br>
+      +1 (929) 337-4789<br>
+      New York, NY · Anglais &amp; Français
+    </div>
+  </footer>
+
+</div>
+</body>
+</html>

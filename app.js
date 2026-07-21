@@ -28,6 +28,7 @@
 
   const body = document.body;
   const COVERS = { en: "assets/cover-en.png", fr: "assets/cover-fr.png" };
+  const ONESHEET = { en: "assets/speaker-onesheet.pdf", fr: "assets/speaker-onesheet-fr.pdf" };
   let lang = "en";
 
   /* ----------------------------------------------------------------- i18n */
@@ -68,6 +69,9 @@
 
     // swap every book cover (hero, featured, book page) to the active language
     document.querySelectorAll(".js-cover").forEach((img) => { img.src = COVERS[lang]; });
+
+    // swap the speaker one-sheet download to the active language
+    document.querySelectorAll(".js-onesheet").forEach((a) => { a.href = ONESHEET[lang]; });
 
     // lang button state
     document.querySelectorAll("[data-lang-btn]").forEach((b) =>
