@@ -30,6 +30,7 @@ window.I18N = {
     "cta.requestProposal": "Request the Project Proposal",
     "cta.bookDentz": "Book Dentz-Roll for Your Event",
     "cta.requestInterview": "Request an Interview or Speaking Appearance",
+    "cta.onesheet": "Download the Speaker One-Sheet (PDF)",
     "cta.contact": "Contact ImageMagicPublish",
 
     /* HERO */
@@ -332,6 +333,7 @@ window.I18N = {
     "cta.requestProposal": "Demander le Dossier du Projet",
     "cta.bookDentz": "Inviter Dentz-Roll Pour Votre Événement",
     "cta.requestInterview": "Demander Une Interview ou Une Présence Comme Conférencier",
+    "cta.onesheet": "Télécharger la Fiche du Conférencier (PDF)",
     "cta.contact": "Contacter ImageMagicPublish",
 
     /* HERO */
