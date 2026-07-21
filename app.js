@@ -14,7 +14,7 @@
   const CONFIG = {
     // Amazon product links (language-aware). Buy the Book opens the reader's language.
     amazonBookUrl:    { en: "https://www.amazon.com/dp/B0FSGFVDD8", fr: "https://www.amazon.com/dp/B0FSZWJSS9" },
-    calendlyUrl:      "",             // Calendly booking link (Book a Call button)
+    calendlyUrl:      "https://calendly.com/imagemagicpublish/30min", // Calendly booking link (Book a Call button)
     turnstileSiteKey: "",             // Cloudflare Turnstile SITE key (public) for the contact form
     contactEndpoint:  "/api/contact", // fallback if Web3Forms not set
     web3formsKey:     "3db72f96-5be3-4d30-83d2-d599841e0f0e", // Web3Forms → contact/booking emails you
