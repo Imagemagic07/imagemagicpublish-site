@@ -183,6 +183,9 @@ h1:focus,h2:focus{outline:none}
 .pull-quote p{font-family:var(--serif);font-style:italic;font-size:clamp(1.35rem,2.4vw,1.72rem);line-height:1.4;color:var(--navy)}
 .pull-quote cite{display:block;margin-top:1.1rem;font-family:var(--sans);font-style:normal;font-size:.78rem;letter-spacing:2px;text-transform:uppercase;color:var(--gold)}
 .section--navy .pull-quote p{color:var(--white-glow)}
+.stage-quote{margin-top:1.6rem;padding-left:1.1rem;border-left:2px solid var(--gold)}
+.stage-quote p{font-family:var(--serif);font-style:italic;font-size:1.22rem;line-height:1.42;color:var(--cream-on-navy)}
+.stage-quote cite{display:block;margin-top:.7rem;font-family:var(--sans);font-style:normal;font-size:.72rem;letter-spacing:1.6px;text-transform:uppercase;color:var(--gold-hi)}
 .center-row{justify-content:center}
 
 /* ================================================================ LAYOUT */

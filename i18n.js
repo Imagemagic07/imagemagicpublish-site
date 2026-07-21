@@ -213,6 +213,8 @@ window.I18N = {
     "speaking.video.desc": "A conversation on The Sacred Taboo with Frère Bénédic Lamartinière of Télé Lafwa.",
     "speaking.quote.text": "We become what we eat. And we are programmed by what we listen to, what we watch, the people we surround ourselves with, and the energy we exchange through intimacy.",
     "speaking.quote.by": "Dentz-Roll Bonheur — from the Télé Lafwa interview",
+    "speaking.testi.text": "The way you connected science, faith, and personal responsibility really made me stop and think. It was a blessing hearing you speak at the book club.",
+    "speaking.testi.by": "Live audience member",
     "speaking.talks.title": "Signature Talks",
     "speaking.talks.intro": "Each one can become a keynote, an interactive workshop, or a multi-session series, shaped to your audience.",
     "speaking.talks.items": [
@@ -513,6 +515,8 @@ window.I18N = {
     "speaking.video.desc": "Une conversation autour du Tabou Sacré avec Frère Bénédic Lamartinière de Télé Lafwa.",
     "speaking.quote.text": "Nous devenons ce que nous mangeons. Et nous sommes programmés par ce que nous écoutons, ce que nous regardons, les gens dont nous nous entourons, et l’énergie que nous échangeons à travers l’intimité.",
     "speaking.quote.by": "Dentz-Roll Bonheur — extrait de l’interview sur Télé Lafwa",
+    "speaking.testi.text": "La façon dont vous avez relié la science, la foi et la responsabilité personnelle m’a vraiment fait réfléchir. Ce fut une bénédiction de vous entendre parler au club de lecture.",
+    "speaking.testi.by": "Membre du public",
     "speaking.talks.title": "Conférences Signature",
     "speaking.talks.intro": "Chacune peut devenir un keynote, un atelier interactif, ou une série de plusieurs sessions, façonnée pour votre audience.",
     "speaking.talks.items": [
