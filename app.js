@@ -28,7 +28,7 @@
 
   const body = document.body;
   const COVERS = { en: "assets/cover-en.png", fr: "assets/cover-fr.png" };
-  const ONESHEET = { en: "assets/speaker-onesheet.pdf?v=2", fr: "assets/speaker-onesheet-fr.pdf?v=2" };
+  const ONESHEET = { en: "assets/speaker-onesheet.pdf?v=3", fr: "assets/speaker-onesheet-fr.pdf?v=3" };
   let lang = "en";
 
   /* ----------------------------------------------------------------- i18n */
