@@ -187,6 +187,7 @@ h1:focus,h2:focus{outline:none}
 .stage-quote{margin-top:1.6rem;padding-left:1.1rem;border-left:2px solid var(--gold)}
 .stage-quote p{font-family:var(--serif);font-style:italic;font-size:1.22rem;line-height:1.42;color:var(--cream-on-navy)}
 .stage-quote cite{display:block;margin-top:.7rem;font-family:var(--sans);font-style:normal;font-size:.72rem;letter-spacing:1.6px;text-transform:uppercase;color:var(--gold-hi)}
+.stage-credential{margin-top:1.4rem;font-size:.92rem;line-height:1.55;color:var(--cream-soft)}
 .center-row{justify-content:center}
 
 /* ================================================================ LAYOUT */

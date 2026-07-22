@@ -216,6 +216,9 @@ window.I18N = {
     "speaking.quote.by": "Dentz-Roll Bonheur, from the Télé Lafwa interview",
     "speaking.testi.text": "The way you connected science, faith, and personal responsibility really made me stop and think. It was a blessing hearing you speak at the book club.",
     "speaking.testi.by": "Live audience member",
+    "speaking.secah.text": "Through concrete examples, accessible comparisons, and carefully chosen wordplay, he knew how to capture attention, facilitate understanding, and help audiences absorb and retain the message.",
+    "speaking.secah.by": "Mesidor Jean-Frantz, Director, SECAH (Haiti)",
+    "speaking.credential": "For over a decade, Dentz-Roll Bonheur represented SECAH, a recognized Haitian youth-education organization, presenting in respected Port-au-Prince schools including Collège Saint-Louis de Bourdon and Collège Sacré-Cœur de Turgeau.",
     "speaking.talks.title": "Signature Talks",
     "speaking.talks.intro": "Each one can become a keynote, an interactive workshop, or a multi-session series, shaped to your audience.",
     "speaking.talks.items": [
@@ -519,6 +522,9 @@ window.I18N = {
     "speaking.quote.by": "Dentz-Roll Bonheur, extrait de l’interview sur Télé Lafwa",
     "speaking.testi.text": "La façon dont vous avez relié la science, la foi et la responsabilité personnelle m’a vraiment fait réfléchir. Ce fut une bénédiction de vous entendre parler au club de lecture.",
     "speaking.testi.by": "Membre du public",
+    "speaking.secah.text": "À travers des exemples concrets, des comparaisons accessibles et des jeux de mots soigneusement choisis, il savait capter l’attention, faciliter la compréhension et aider le public à assimiler et retenir le message.",
+    "speaking.secah.by": "Mesidor Jean-Frantz, Directeur, SECAH (Haïti)",
+    "speaking.credential": "Pendant plus d’une décennie, Dentz-Roll Bonheur a représenté le SECAH, une organisation haïtienne reconnue au service de la jeunesse, intervenant dans des écoles respectées de Port-au-Prince, dont le Collège Saint-Louis de Bourdon et le Collège Sacré-Cœur de Turgeau.",
     "speaking.talks.title": "Conférences Signature",
     "speaking.talks.intro": "Chacune peut devenir un keynote, un atelier interactif, ou une série de plusieurs sessions, façonnée pour votre audience.",
     "speaking.talks.items": [
